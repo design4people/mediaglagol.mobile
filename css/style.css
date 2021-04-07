@@ -25,7 +25,13 @@ img {
   line-height: 45px;
   color: #FFFFFF;
   
-  background-color: #1C0C01;
+  background-color: rgba(28, 12, 1, 1);
+}
+
+.main-nav {
+  min-height: 56px;
+  
+  background-color: rgba(28, 12, 1, 1);
 }
 
 .main-nav__list {
