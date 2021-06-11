@@ -59,9 +59,22 @@ img {
 }
 
 .main-nav {
+  position: relative;
   min-height: 56px;
   
   background-color: rgba(28, 12, 1, 1);
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 0;
+  width: 28px;
+  height: 28px;
+  top: 14px;
+  left: 16px;
+  
+  background: url("../img/close.svg") no-repeat center transparent;
+  border: none;
 }
 
 .main-nav__list {
