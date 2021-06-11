@@ -15,23 +15,23 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключатель меню</span></button>
         <form class="main-nav__search">
-          <input type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
-          <button type="submit">Поиск</button>
+          <input class="main-nav__search--input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+          <button class="main-nav__search--button" type="submit"><span class="visually-hidden">Поиск</span></button>
         </form>
         <ul class="main-nav__list site-list">
-          <li><a>Главная</a></li>
-          <li><a href="#">Школа</a></li>
-          <li><a href="#">Библиотека</a></li>
-          <li><a href="#">Библия онлайн</a></li>
-          <li><a href="#">Пожертвования</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="#">Школа</a></li>
+          <li class="site-list__item"><a href="#">Библиотека</a></li>
+          <li class="site-list__item"><a href="#">Библия онлайн</a></li>
+          <li class="site-list__item"><a href="#">Пожертвования</a></li>
+          <li class="site-list__item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li><a href="#">Личный кабинет</a></li>
         </ul>
         <ul class="main-nav__list social-list">
-          <li><a href="#">Мы в Фейсбуке</a></li>
-          <li><a href="#">Мы в Телеграм</a></li>
+          <li><a class="social-list__link--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          <li><a class="social-list__link--tg" href="#"><span class="visually-hidden">Мы в Телеграм</span></a></li>
         </ul>
       </nav>
     </header>
