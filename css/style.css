@@ -132,3 +132,25 @@ img {
 .site-list__item--active a {
   color: #E3A84B;
 }
+
+.social-list {
+  display: flex;
+}
+
+.social-list a {
+  margin: 9px 0;
+  margin-left: 30px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: solid 1px #FFFFFF;
+  border-radius: 50%;
+}
+
+.social-list__link--fb {
+  background: url("../img/icon-fb.svg") no-repeat center;
+}
+
+.social-list__link--tg {
+  background: url("../img/icon-tg.svg") no-repeat center;
+}
