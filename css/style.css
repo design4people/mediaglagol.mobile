@@ -107,3 +107,28 @@ img {
   
   list-style: none;
 }
+
+.site-list a {
+  display: block;
+  padding: 2px 30px;
+  
+  color: #FFFFFF;
+  text-decoration: none;
+  
+  border-bottom: solid 1px rgba(102, 102, 102, 0.48);
+}
+
+.user-list a {
+  display: block;
+  padding: 2px 30px;
+  padding-left: 60px;
+  
+  color: #FFFFFF;
+  text-decoration: none;
+  
+  background: url("../img/user.svg") no-repeat 30px center;
+}
+
+.site-list__item--active a {
+  color: #E3A84B;
+}
