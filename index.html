@@ -2,41 +2,69 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>mediaglagol.mobile</title>
+    <title>mediaglagol.mobile | start.page</title>
     <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
     <meta name="description" content="МедиаГлагол">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="start-page index">
     <header class="site-header">
       <a href="#" class="site-header__logo">
         <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключатель меню</span></button>
-        <form class="main-nav__search">
-          <input class="main-nav__search--input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
-          <button class="main-nav__search--button" type="submit"><span class="visually-hidden">Поиск</span></button>
-        </form>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="#">Школа</a></li>
-          <li class="site-list__item"><a href="#">Библиотека</a></li>
-          <li class="site-list__item"><a href="#">Библия онлайн</a></li>
-          <li class="site-list__item"><a href="#">Пожертвования</a></li>
-          <li class="site-list__item"><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li><a href="#">Личный кабинет</a></li>
-        </ul>
-        <ul class="main-nav__list social-list">
-          <li><a class="social-list__link--fb" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-          <li><a class="social-list__link--tg" href="#"><span class="visually-hidden">Мы в Телеграмe</span></a></li>
-        </ul>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="icon" width="28" viewBox="0 0 28 28">
+            <use class="icon--closed" xlink:href="#closed"></use>
+            <use class="icon--burger" xlink:href="#burger"></use>
+          </svg><span class="visually-hidden">Переключатель меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <form class="main-nav__search">
+            <input class="main-nav__search--input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search--button" type="submit"><span class="visually-hidden">Поиск</span></button>
+          </form>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="#">Школа</a></li>
+            <li class="site-list__item"><a href="#">Библиотека</a></li>
+            <li class="site-list__item"><a href="#">Библия онлайн</a></li>
+            <li class="site-list__item"><a href="donation.html">Пожертвования</a></li>
+            <li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li>
+              <a class="user-list__link" href="login.html">
+                <svg class="login__icon" width="28" viewBox="0 0 28 28">
+                  <use xlink:href="#user"></use>
+                </svg>
+                <span>Личный кабинет</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="site-main">
+    <main class="page">
       <h1>Православный образовательный проект Медиаглагол</h1>
       <p>Медиаглагол - это некоммерческий, благотворительный проект, созданный с целью поддержки христианской просветительской деятельности. </p>
       <ul>
@@ -70,43 +98,59 @@
       </section>
     </main>
     <footer class="site-footer">
-      <p>
-        <a href="#" class="site-header__logo">
-          <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
+      <p class="site-footer__top">
+        <a href="#" class="site-footer__logo">
+          <img class="site-footer__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="44" height="42">
         </a>
-        <strong>Православный образовательный проект</strong>
+        <strong class="site-footer__title">Православный <br>образовательный проект</strong>
       </p>
-      <ul>
-        <li>О нас
-          <ul>
-            <li>Контакты</li>
-            <li>Форма волонтера</li>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">О нас
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Контакты</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форма волонтера</a></li>
           </ul>
         </li>
-        <li>Присоедниться:
-          <ul>
-            <li>Мы в Фейсбуке</li>
-            <li>Мы в Телеграмe</li>
-          </ul>
-        </li>
-        <li>Школа
-          <ul>
-            <li>Личный кабинет</li>
-            <li>Программа</li>
-            <li>Форум</li>
-            <li>Заявка на обучение</li>
-          </ul>
-        </li>
-        <li>Библиотека
-          <ul>
-            <li>Разделы</li>
-            <li>Словари</li>
-            <li>Статьи</li>
-            <li>Медиа продукты</li>
+        <li class="site-footer__nav-section">Присоединиться:
+          <ul class="site-footer__nav-list site-footer__social-list">
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="facebook.com">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="telegram.org">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
           </ul>
         </li>
       </ul>
-      <p>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">Школа
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Личный кабинет</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Программа</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форум</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Заявка на обучение</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Библиотека
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Разделы</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Словари</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Статьи</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Медиа продукты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="site-footer__copyright">
         <span>© МЕДИАГЛАГОЛ. Все права сохранены</span>
       </p>
     </footer>
