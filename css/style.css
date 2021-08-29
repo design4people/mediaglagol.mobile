@@ -243,6 +243,10 @@ img {
   padding: 15px;
 }
 
+.contacts .page__header {
+  padding-bottom: 30px;
+}
+
 .breadcrumb {
   font-style: normal;
   font-weight: normal;
@@ -280,6 +284,52 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.contacts__content {
+  font-family: Roboto;
+}
+
+.contacts__info {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.contacts__appeal {
+  display: inline-block;
+  padding-bottom: 12px;
+  
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts__info a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contacts__social-link {
+  display: inline-block;
+  margin-right: 20px;
+  width: 26px;
+  height: 26px;
+  box-shadow: inset 0 0 0 2px #515151;
+  border-radius: 50%;
+}
+
+.contacts__social-link:hover {
+  box-shadow: inset 0 0 0 2px #E3A84B;
+}
+
+.contacts__social-link .social__icon {
+  width: 26px;
+  height: 26px;
+  fill: #515151;
+}
+
+.contacts__social-link:hover .social__icon {
+  fill: #E3A84B;
 }
 
 .site-footer {
