@@ -243,6 +243,10 @@ img {
   padding: 15px;
 }
 
+.donation .page__header {
+  padding-bottom: 20px;
+}
+
 .contacts .page__header {
   padding-bottom: 30px;
 }
@@ -284,6 +288,61 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.donation__content {
+  font-family: "PT Sans";
+}
+
+.donation__info {
+  margin: 0;
+}
+
+.donation__info--type1 {
+  line-height: 22px;
+}
+
+.donation__title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: rgba(135, 84, 4, 1);
+}
+
+.payment__form {
+  display: flex;
+}
+
+.payment__amount {
+  margin-right: 32px;
+  width: 102px;
+  height: 24px;
+  padding: 5px 10px;
+  border: 1px solid #C4C4C4;
+}
+
+.payment__send {
+  position: relative;
+  /* box-sizing: content-box; */
+  padding: 0 10px;
+  border: 1px solid #BCBCBC;
+}
+
+.payment__send img {
+  display: block;
+  height: 30px;
+  padding: 4px 0;
+  padding-bottom: 0;
+}
+
+.payment__send::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: -33px;
+  width: 32px;
+  height: 1px;
+  background-color: #C0C0C0;
 }
 
 .contacts__content {
