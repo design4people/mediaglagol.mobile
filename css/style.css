@@ -232,6 +232,266 @@ img {
   fill: #ffffff;
 }
 
+.main {
+  font-family: Roboto;
+  color: #000000;
+  
+  background-color: rgba(256, 256, 256, 1);
+}
+
+.main__header {
+  padding: 154px 16px;
+  padding-bottom: 16px;
+  
+  font-weight: 300;
+  color: rgba(153, 115, 41, 1);
+  
+  background-size: auto 210px;
+  background: url("../img/bg_header.jpg") no-repeat top -56px center;
+  
+  /* box-shadow: 0 0px 1px 0 rgba(0,0,0,0.5); */
+}
+
+.main__title {
+  margin: 0;
+  padding: 10px 0;  
+  
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(153, 115, 41, 1);
+}
+
+.main__header p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(109, 109, 109, 1);
+}
+
+.main__list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.main__item {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  
+  box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1);
+}
+
+.main-item__header {
+  margin: 0 16px;
+  padding: 16px 0;
+  padding-bottom: 140px;
+  /* background: no-repeat left bottom url("../img/rectangle 4.jpg") */
+}
+
+.main-item__header.item-header--school {
+  background: no-repeat left bottom url("../img/bg_school-crop.jpg");
+}
+
+.main-item__header.item-header--library {
+  background: no-repeat left bottom url("../img/bg_book-crop.jpg");
+}
+
+.main-item__title {
+  margin: 0;
+  padding: 12px 0 12px 55px;
+  
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  
+  background: no-repeat left url("../img/ornament.jpg");
+  background-size: 42px 42px;
+  background-position: top 0 left 0;
+}
+
+.main-item__text {
+  margin: 16px 16px;
+  padding: 0; 
+}
+
+.main-item__link {
+  display: block;
+  margin: 16px 16px;
+  padding: 0;
+  color: rgba(78, 52, 46, 1);
+}
+
+.main-item__list {
+  padding: 0;
+  list-style: none;
+}
+
+.main-item__preview {
+}
+
+.preview {
+  position: relative;
+  padding: 0 5px 0px 73px;
+  
+  /* background: url("../img/zshytok.png") top left no-repeat ; */
+  background-color: rgba(248, 241, 228, 1);
+}
+
+.preview::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 289px;
+  
+  background: url("../img/zshytok.png") top left no-repeat ;
+}
+
+.preview__title {
+  margin: 0;
+  padding: 0 25px 7px 34px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.preview__author {
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(125, 125, 128, 1);
+}
+
+.preview__photo {
+  margin: 0;
+  margin-right: auto;
+  width: 217px;
+  height: 84px;
+}
+
+.preview__photo img {
+  width: 217px;
+  height: 84px;
+}
+
+.preview__link {
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  padding: 6px 27px 16px 0;
+  color: rgba(45, 23, 10, 1);
+  text-align: right;
+}
+
+.present {
+  position: relative;
+  padding: 8px 10px 7px 103px;
+  
+  background-color: rgba(249, 235, 214, 1);
+}
+
+.present::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 150px;
+  height: 289px;
+  
+  background: url("../img/bible.png") top -25px left no-repeat ;
+}
+
+.present__name {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(135, 84, 4, 1);
+}
+
+.present__title {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.present__text {
+  width: 208px;
+  margin: 14px 0;
+  margin-right: auto;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.present__link {
+  display: block;
+  margin: 0;
+  margin: 6px 0 16px 0;
+  color: rgba(45, 23, 10, 1);
+  text-align: left;
+}
+
+.main-column {
+  margin: 27px 0 44px 0;
+  
+  box-shadow: 0 -1px 0px 0 rgba(0,0,0,0.1);
+}
+
+.main-column__title {
+  margin: 0 15px;
+  padding-top: 27px;
+  
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-column__text {
+  margin: 0 15px;
+  
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-column__link-button {
+  display: block;
+  margin: 16px auto;
+  
+  box-sizing: border-box;
+  width: 224px;
+  
+  padding: 15px 20px;
+  border-radius: 5px;
+  
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: rgba(203, 157, 79, 1);
+  box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.2);
+}
+
 .page {
   font-family: Roboto;
   color: #000000;
