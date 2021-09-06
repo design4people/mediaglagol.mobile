@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>mediaglagol.mobile | start.page</title>
     <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
-    <meta name="description" content="МедиаГлагол">
+    <meta name="description" content="МедиаГлагол - некоммерческий, благотворительный проект, созданный с целью поддержки христианской образовательной и просветительской деятельности">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="format-detection" content="telephone = no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="start-page index">
+  <body id="top" class="start-page index-page">
     <header class="site-header">
       <a href="#" class="site-header__logo">
         <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
@@ -22,12 +24,17 @@
         </button>
         <div class="main-nav__wrapper">
           <form class="main-nav__search">
-            <input class="main-nav__search--input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
-            <button class="main-nav__search--button" type="submit"><span class="visually-hidden">Поиск</span></button>
+            <input class="main-nav__search-input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search-button" type="submit">
+              <svg class="main-nav__search-icon" width="28" viewBox="0 0 28 28">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </form>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="#">Школа</a></li>
+            <li class="site-list__item"><a href="school.html">Школа</a></li>
             <li class="site-list__item"><a href="#">Библиотека</a></li>
             <li class="site-list__item"><a href="#">Библия онлайн</a></li>
             <li class="site-list__item"><a href="donation.html">Пожертвования</a></li>
@@ -64,38 +71,51 @@
         </div>
       </nav>
     </header>
-    <main class="page">
-      <h1>Православный образовательный проект Медиаглагол</h1>
-      <p>Медиаглагол - это некоммерческий, благотворительный проект, созданный с целью поддержки христианской просветительской деятельности. </p>
-      <ul>
-        <li>
-          <h2>Школа катехизации</h2>
-          <p>Мы учредили школу христианской катехизации и проводим регулярные занятия. В этом разделе Вы найдете подробные сведения о нашей школе: принципы, подходы и правила ее работы, ознакомиться с программой обучения, перечнем рекомендуемой литературы и подборкой учебных материалов. Здесь же желающие могут зарегистрироваться и приступить к обучению</p>
-          <a href="#">Перейти в раздел</a>
-          <section>
-            <h3><span>А.Берлянд</span>Исторические сведения об Огласительной школе</h3>
-            <figure>
-              <img src="img/photo-1.jpg" alt="Фото 1" width="217" height="84">
-            </figure>
-            <a href="#">Читать статью</a>
-          </section>
+    <main class="main page">
+      <header class="main__header">
+        <h1 class="main__title">Православный образовательный проект Медиаглагол</h1>
+        <p>Добро пожаловать на сайт нашего образовательного проекта, основанного в 2009 году группой единомышленников - православных христиан. </p>
+        <p>Медиаглагол - это некоммерческий, благотворительный проект, созданный с целью поддержки христианской просветительской деятельности. </p>
+      </header>
+      <ul class="main__list">
+        <li class="main__item main-item">
+          <header class="main-item__header item-header--school">
+            <h2 class="main-item__title">Школа катехизации</h2>
+          </header>
+          <p class="main-item__text">Мы учредили школу христианской катехизации и проводим регулярные занятия.</p>
+          <p class="main-item__text">В этом разделе Вы найдете подробные сведения о нашей школе: принципы, подходы и правила ее работы, ознакомиться с программой обучения, перечнем рекомендуемой литературы и подборкой учебных материалов. Здесь же желающие могут зарегистрироваться и приступить к обучению</p>
+          <a class="main-item__link" href="#">Перейти в раздел</a>
+          <ul class="main-item__list slider">
+            <li class="main-item__preview preview">
+              <h3 class="preview__title"><span class="preview__author">А. Берлянд</span>Исторические сведения об Огласительной школе</h3>
+              <figure class="preview__photo">
+                <img src="img/photo-1.jpg" alt="Огласительная школа" width="217" height="84">
+              </figure>
+              <a class="preview__link" href="#">Читать статью</a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <h2>Библиотека</h2>
-          <p>Для образовательных целей мы собрали разнообразную литературу и учебные материалы по библеистике, теологии, истории, философии. Функционал библиотеки разработан с целью содействия углубленному изучению Священного Писания.</p>
-          <section>
-            <h3><span>Чтение онлайн</span>Библейский отдел</h3>
-            <p>Просматривайте, сопоставляйте и синхронизируйте различные переводы и толкования Библии с помощью фунцкионала нашей библиотеки.</p>
-            <a href="#">Начать чтение</a>
+        <li class="main__item">
+          <header class="main-item__header item-header--library">
+            <h2 class="main-item__title">Библиотека</h2>
+          </header>
+          <p class="main-item__text">Для образовательных целей мы собрали разнообразную литературу и учебные материалы по библеистике, теологии, истории, философии. Функционал библиотеки разработан с целью содействия углубленному изучению Священного Писания.</p>
+          <section class="main-item__present present">
+            <b class="present__name">Чтение онлайн</b>
+            <h3 class="present__title">Библейский отдел</h3>
+            <p class="present__text">Просматривайте, сопоставляйте и синхронизируйте различные переводы и толкования Библии с помощью фунцкионала нашей библиотеки.</p>
+            <a class="present__link" href="#">Начать чтение</a>
           </section>
         </li>
       </ul>
-      <section>
-        <h3>Помочь проекту</h3>
-        <p>Мы не торгуем, не предоставляем платные услуги и на наших страницах вы не найдете коммерческой рекламы. Однако, хотим отметить, поддержания и развития проекта требует от нас немалых затрат времени и ресурсов. Рассчитываем на Ваше понимание и моральную поддержку, но не откажемся от посильного участия.</p>
-        <p>У нас есть что Вам предложить. Перейдя по следующей ссылке Вы попадете на страницу содержащую форму, с помощью которой можно легко совершить добровольный вклад в развитию нашего проекта.</p>
-        <a href="#">Содейсвовать</a>
+      <section class="main__column main-column">
+        <h3 class="main-column__title">Хотите помочь <br>нашему проекту?</h3>
+        <p class="main-column__text">У нас есть страница для удаленного перевода пожертвований, удобная как физическим, так и юридическим лицам.</p>
+        <a class="main-column__link-button" href="donation.html">Пожертвовать</a>
+        <p class="main-column__text">Как вы сможете убедиться, на нашем проекте отсутствует торговля в каком-либо виде и не оказывается никаких платных услуг. На страницах портала вы также не найдете рекламы.</p>
+        <p class="main-column__text">При этом, мы, конечно, несем материальные затраты на поддержку и развитие нашего проекта, рассчитывая исключительно на добровольные пожертвования тех, кто это понимает и желает вложить свою долю в проект, который может, таким образом, стать нашим общим делом.</p>
       </section>
+      <div class="page__link--up"><a href="#top">Наверх</a></div>
     </main>
     <footer class="site-footer">
       <p class="site-footer__top">
