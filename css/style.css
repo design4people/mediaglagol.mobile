@@ -503,11 +503,11 @@ img {
   padding: 15px;
 }
 
-.donation .page__header {
+.donation-page .page__header {
   padding-bottom: 20px;
 }
 
-.contacts .page__header {
+.contacts-page .page__header {
   padding-bottom: 30px;
 }
 
