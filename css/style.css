@@ -550,6 +550,35 @@ img {
   font-weight: 400;
 }
 
+.page__link--up {
+  margin: 0 15px;
+  margin-bottom: 23px;
+  text-align: right;
+}
+
+.page__link--up a {
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 1);
+  
+  text-decoration: none;
+}
+
+.page__link--up a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -44px;;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  
+  background: url(../img/chevrons-up.svg) no-repeat 50% rgba(189, 159, 81, 0.8);
+}
+
 .donation__content {
   font-family: "PT Sans";
 }
