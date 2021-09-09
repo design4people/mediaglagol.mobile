@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>mediaglagol.mobile | donation.page</title>
     <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
-    <meta name="description" content="МедиаГлагол">
+    <meta name="description" content="МедиаГлагол - некоммерческий, благотворительный проект, созданный с целью поддержки христианской образовательной и просветительской деятельности">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="format-detection" content="telephone = no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="inner-page donation">
+  <body id="top" class="inner-page donation-page">
     <header class="site-header">
       <a href="#" class="site-header__logo">
         <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
@@ -22,12 +24,17 @@
         </button>
         <div class="main-nav__wrapper">
           <form class="main-nav__search">
-            <input class="main-nav__search--input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
-            <button class="main-nav__search--button" type="submit"><span class="visually-hidden">Поиск</span></button>
+            <input class="main-nav__search-input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search-button" type="submit">
+              <svg class="main-nav__search-icon" width="28" viewBox="0 0 28 28">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </form>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="#">Школа</a></li>
+            <li class="site-list__item"><a href="school.html">Школа</a></li>
             <li class="site-list__item"><a href="#">Библиотека</a></li>
             <li class="site-list__item"><a href="#">Библия онлайн</a></li>
             <li class="site-list__item site-list__item--active"><a href="#">Пожертвования</a></li>
