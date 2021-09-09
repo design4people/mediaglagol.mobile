@@ -9,6 +9,9 @@
     <meta name="format-detection" content="telephone = no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- slider -->
+
+    <!-- /slider -->
   </head>
   <body id="top" class="start-page index-page">
     <header class="site-header">
@@ -82,18 +85,30 @@
           <header class="main-item__header item-header--school">
             <h2 class="main-item__title">Школа катехизации</h2>
           </header>
-          <p class="main-item__text">Мы учредили школу христианской катехизации и проводим регулярные занятия.</p>
-          <p class="main-item__text">В этом разделе Вы найдете подробные сведения о нашей школе: принципы, подходы и правила ее работы, ознакомиться с программой обучения, перечнем рекомендуемой литературы и подборкой учебных материалов. Здесь же желающие могут зарегистрироваться и приступить к обучению</p>
+          <p class="main-item__text">Раздел содержит общие сведения об устройстве школы: принципы и правила ее работы, программы обучения, списки рекомендованной литературы и подборка учебных материалов. Здесь же производится регистрация учащихся.</p>
           <a class="main-item__link" href="#">Перейти в раздел</a>
-          <ul class="main-item__list slider">
-            <li class="main-item__preview preview">
-              <h3 class="preview__title"><span class="preview__author">А. Берлянд</span>Исторические сведения об Огласительной школе</h3>
-              <figure class="preview__photo">
-                <img src="img/photo-1.jpg" alt="Огласительная школа" width="217" height="84">
-              </figure>
-              <a class="preview__link" href="#">Читать статью</a>
-            </li>
-          </ul>
+          <div class="main-item__wrapper slider">
+            <ul class="main-item__list slider-list">
+              <li class="preview slide active">
+                <h3 class="preview__title"><span class="preview__author">А. Берлянд</span>Исторические сведения об Огласительной школе</h3>
+                <figure class="preview__photo">
+                  <img src="img/photo-1.jpg" alt="Преподаватели огласительной школы" width="217" height="84">
+                </figure>
+                <a class="preview__link" href="#">Читать статью</a>
+              </li>
+              <li class="preview slide">
+                <h3 class="preview__title"><span class="preview__author">П. Проценко</span>Законоучитель времен беззакония</h3>
+                <figure class="preview__photo">
+                  <img src="img/photo-2.jpg" alt="Карпова" width="217" height="84">
+                </figure>
+                <a class="preview__link" href="#">Читать статью</a>
+              </li>
+            </ul>
+            <ul class="controls-list controls">
+              <li class="control active"></li>
+              <li class="control"></li>
+            </ul>
+          </div>
         </li>
         <li class="main__item">
           <header class="main-item__header item-header--library">
