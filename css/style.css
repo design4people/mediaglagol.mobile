@@ -320,6 +320,11 @@ img {
 .main-item__text {
   margin: 16px 16px;
   padding: 0; 
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
 }
 
 .main-item__link {
@@ -329,19 +334,27 @@ img {
   color: rgba(78, 52, 46, 1);
 }
 
-.main-item__list {
+.slider-list {
   padding: 0;
   list-style: none;
 }
 
-.main-item__preview {
+.slider-list {
+  
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
 }
 
 .preview {
   position: relative;
-  padding: 0 5px 0px 73px;
+  padding: 0 5px 0px 80px;
   
-  /* background: url("../img/zshytok.png") top left no-repeat ; */
   background-color: rgba(248, 241, 228, 1);
 }
 
@@ -357,8 +370,12 @@ img {
 }
 
 .preview__title {
+  /* для заголовків в 4 рядки */
+  display: table-cell;
+  vertical-align: middle; 
   margin: 0;
-  padding: 0 25px 7px 34px;
+  height: 96px;
+  padding: 0 20px 7px 30px;
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
@@ -390,6 +407,52 @@ img {
   padding: 6px 27px 16px 0;
   color: rgba(45, 23, 10, 1);
   text-align: right;
+}
+
+@media (min-width: 340px) {
+  .preview__title {
+    display: block;
+    vertical-align: middle; 
+    height: auto;
+  }
+
+  .preview__photo {
+    margin: 0;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+  }
+  
+  .preview__photo img {
+    width: auto;
+    height: auto;
+  }
+}
+
+.controls-list {
+  display: flex;
+  padding: 10px 0 14px 0;
+  list-style: none;
+  
+  justify-content: center;
+}
+
+.control {
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  
+  background-color: rgba(230, 230, 230, 1);
+  cursor: pointer;
+}
+
+.control.active {
+  background-color: rgba(153, 115, 41, 1);
+}
+
+.control:last-child {
+  margin-right: 0;
 }
 
 .present {
