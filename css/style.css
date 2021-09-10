@@ -247,16 +247,15 @@ body {
 }
 
 .main__header {
-  padding: 154px 16px;
+  /* padding: 154px 16px; */
+  padding: 210px 16px;
   padding-bottom: 16px;
   
   font-weight: 300;
   color: rgba(153, 115, 41, 1);
   
   background-size: auto 210px;
-  background: url("../img/bg_header.jpg") no-repeat top -56px center;
-  
-  /* box-shadow: 0 0px 1px 0 rgba(0,0,0,0.5); */
+  background: url("../img/bg_header.jpg") no-repeat top center;
 }
 
 .main__title {
@@ -571,6 +570,7 @@ body {
 
 .page__header {
   padding: 15px;
+  padding-top: 61px;
 }
 
 .donation-page .page__header {
