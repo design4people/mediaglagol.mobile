@@ -37,12 +37,19 @@ img {
   overflow: hidden;
 }
 
-.site-header {
+body {
   position: relative;
+}
+
+.site-header {
+  /* position: relative; */
+  position: absolute;
   min-height: 56px;
-  /* height: 56px; */
+  top: 0;
+  width: 100%;
+  height: 56px;
   
-  background-color: rgba(28, 12, 1, 1);
+  background-color: rgba(15, 6, 0, 0.85);
 }
 
 .site-header__logo {
