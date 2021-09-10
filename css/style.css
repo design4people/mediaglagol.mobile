@@ -299,15 +299,38 @@ body {
   margin: 0 16px;
   padding: 16px 0;
   padding-bottom: 140px;
-  /* background: no-repeat left bottom url("../img/rectangle 4.jpg") */
 }
 
 .main-item__header.item-header--school {
-  background: no-repeat left bottom url("../img/bg_school-crop.jpg");
+  position: relative;
+}
+
+.main-item__header.item-header--school::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  
+  background: no-repeat center bottom url("../img/bg_school-crop.jpg");
+  background-size: auto 160px ;
 }
 
 .main-item__header.item-header--library {
-  background: no-repeat left bottom url("../img/bg_book-crop.jpg");
+  position: relative;
+}
+
+.main-item__header.item-header--library::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  
+  background: no-repeat center bottom url("../img/bg_library-crop.jpg");
+  background-size: auto 160px;
 }
 
 .main-item__title {
