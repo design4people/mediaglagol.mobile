@@ -185,12 +185,20 @@ body {
   border-bottom: solid 1px rgba(102, 102, 102, 0.48);
 }
 
+.site-list__item--active a {
+  color: #E3A84B;
+}
+
 .user-list__link {
   display: flex;
   padding: 2px 30px;
   
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.user-list__link  {
+  stroke: #FFFFFF;
 }
 
 .user-list__link span {
@@ -208,8 +216,12 @@ body {
   display: none;
 }
 
-.site-list__item--active a {
+.user-list__item--active a {
   color: #E3A84B;
+}
+
+.user-list__item--active .login__icon {
+  stroke: #E3A84B;
 }
 
 .social-list {
