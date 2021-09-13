@@ -673,6 +673,10 @@ body {
 }
 
 .login__form {
+  margin: 0 auto;
+}
+
+.modal-form {
   width: 280px;
 }
 
