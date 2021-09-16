@@ -753,6 +753,25 @@ body {
   margin-bottom: 10px;
 }
 
+.school-item__title {
+  position: relative;
+  margin: 8px 0 8px 0;
+  padding-left: 50px;
+  
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  
+  text-align: left;
+  cursor: pointer;
+}
+
+.school-item__title.show {
+  color: rgba(135, 84, 4, 1);
+}
+
 .discipleship-quote {
   position: relative;
   margin: 40px 0 0 35px;
