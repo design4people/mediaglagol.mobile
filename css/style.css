@@ -737,6 +737,17 @@ body {
   /* margin-bottom: 0; */
 }
 
+.school__content {
+  margin: 0;
+  padding: 5px 15px;
+  
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.school__content.login__content {
+  box-shadow: none;
+}
+
 .discipleship-quote {
   position: relative;
   margin: 40px 0 0 35px;
