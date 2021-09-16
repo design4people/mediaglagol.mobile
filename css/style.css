@@ -688,6 +688,55 @@ body {
   background: url(../img/chevrons-up.svg) no-repeat 50% rgba(189, 159, 81, 0.8);
 }
 
+.current-event {
+  margin: 0;
+  padding: 15px;
+  
+  background-color: rgba(249, 235, 214, 1);
+}
+
+.current-event__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 18px;
+  padding-left: 35px;
+  
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.current-event__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -3px;
+  width: 28px;
+  height: 24px;
+  background: no-repeat center url("../img/calendar.svg");
+}
+
+.current-event time {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #875404;
+  
+  text-align: left;
+}
+
+.current-event p {
+  font-family: PT Sans;
+}
+
+.current-event a {
+  color: #000000;
+}
+
+.current-event > *:last-child {
+  /* margin-bottom: 0; */
+}
+
 .login__form {
   margin: 0 auto;
 }
