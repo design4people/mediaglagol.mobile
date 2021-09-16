@@ -772,6 +772,21 @@ body {
   color: rgba(135, 84, 4, 1);
 }
 
+.school-item__title::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  
+  background: center/contain url("../img/arrow.svg") no-repeat;
+}
+
+.school-item__title.show::before {
+  transform: rotate(90deg);
+}
+
 .discipleship-quote {
   position: relative;
   margin: 40px 0 0 35px;
