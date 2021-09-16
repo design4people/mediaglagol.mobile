@@ -195,10 +195,19 @@ body {
   
   color: #FFFFFF;
   text-decoration: none;
+  
+  align-items: center;
 }
 
-.user-list__link  {
+.user-list__link .login__icon {
+  width: 28px;
+  height: 28px;
+  
   stroke: #FFFFFF;
+}
+
+.user-list__item--active .login__icon {
+  stroke: #E3A84B;
 }
 
 .user-list__link span {
@@ -220,10 +229,6 @@ body {
 
 .user-list__item--active a {
   color: #E3A84B;
-}
-
-.user-list__item--active .login__icon {
-  stroke: #E3A84B;
 }
 
 .social-list {
