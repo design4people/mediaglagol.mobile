@@ -748,6 +748,11 @@ body {
   box-shadow: none;
 }
 
+.page__tree {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .discipleship-quote {
   position: relative;
   margin: 40px 0 0 35px;
