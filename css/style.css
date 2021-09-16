@@ -737,6 +737,40 @@ body {
   /* margin-bottom: 0; */
 }
 
+.discipleship-quote {
+  position: relative;
+  margin: 40px 0 0 35px;
+  
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #875404;
+}
+
+.discipleship-quote::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -25px;
+  width: 19px;
+  height: 16px;
+  background: no-repeat center url("../img/quote.svg");
+}
+
+.discipleship-quote__source {
+  display: block;
+  margin-right: 15px;
+  
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 25px;
+  color: #000000;
+  text-align: right;
+}
+
 .login__form {
   margin: 0 auto;
 }
