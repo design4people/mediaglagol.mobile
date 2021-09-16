@@ -748,6 +748,10 @@ body {
   box-shadow: none;
 }
 
+.school__content a {
+  color: #000000;
+}
+
 .page__tree {
   margin: 0;
   margin-bottom: 10px;
