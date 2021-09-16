@@ -13,6 +13,8 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// script slider
+
 const
   slides = document.querySelectorAll('.slide'),
   controls = document.querySelectorAll('.control');
@@ -20,21 +22,21 @@ const
 let index = 0;
 
 const activeSlide = n => {
-  for(slide of slides) {
+  for (slide of slides) {
     slide.classList.remove('active');
   }
   slides[n].classList.add('active');
 }
 
 const activeControl = n => {
-  for(control of controls) {
+  for (control of controls) {
     control.classList.remove('active');
   }
   controls[n].classList.add('active');
 }
 
 const nextSlide = () => {
-  if(index == slides.length - 1) {
+  if (index == slides.length - 1) {
     index = 0;
     activeSlide(index);
     activeControl(index);
@@ -46,7 +48,7 @@ const nextSlide = () => {
 }
 
 const prevSlide = () => {
-  if(index == 0) {
+  if (index == 0) {
     index = slides.length - 1;
     activeSlide(index);
     activeControl(index);
@@ -65,4 +67,6 @@ controls.forEach((item, indexControl) => {
   })
 })
 
-setInterval(nextSlide, 10000);
+if (slides.length != 0) {
+  setInterval(nextSlide, 10000);
+}
