@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>mediaglagol.mobile | account.page</title>
+    <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
+    <meta name="description" content="МедиаГлагол - некоммерческий, благотворительный проект, созданный с целью поддержки христианской образовательной и просветительской деятельности">    <meta name="viewport" content="width = device-width, initial-scale = 1.0">    <meta name="format-detection" content="telephone = no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="top" class="inner-page account-page">
+    <header class="site-header">
+      <a href="index.html" class="site-header__logo">
+        <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="icon" width="28" viewBox="0 0 28 28">
+            <use class="icon--closed" xlink:href="#closed"></use>
+            <use class="icon--burger" xlink:href="#burger"></use>
+          </svg><span class="visually-hidden">Переключатель меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <form class="main-nav__search">
+            <input class="main-nav__search-input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search-button" type="submit">
+              <svg class="main-nav__search-icon" width="28" viewBox="0 0 28 28">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </form>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="school.html">Школа</a></li>
+            <li class="site-list__item"><a href="#">Библиотека</a></li>
+            <li class="site-list__item"><a href="#">Библия онлайн</a></li>
+            <li class="site-list__item"><a href="donation.html">Пожертвования</a></li>
+            <li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item user-list__item--active">
+              <a class="user-list__link">
+                <svg class="login__icon" width="28" viewBox="0 0 28 28">
+                  <use xlink:href="#user"></use>
+                </svg>
+                <span>Личный кабинет</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- main block -->
+    <main class="page">
+      <header class="page__header">
+        <p class="breadcrumb"><a href="index.html">Главная </a> > <span>Кабинет</span></p>
+        <h1 class="page__title">Личный кабинет</h1>
+      </header>
+      <section class="page__content account__content">
+        <div class="tabs">
+          <div class="tabs__controls">
+            <a class="tabs__control is-active">Профиль</a>
+            <a class="tabs__control">Программа</a>
+            <a class="tabs__control">Закладки</a>
+          </div>
+          <div class="tabs__content tabs__tree">
+            <section class="tabs__item profile is-active">
+              <header class="profile__header">
+                <h2 class="profile__title"><span>Группа ДО 2020 </span>anna.radchenko</h2>
+                <figure class="profile__photo">
+                  <img src="img/user-photo--crop.jpg" alt="anna.radchenko" width="56" height="56">
+                </figure>
+              </header>
+              <form class="profile__form modal-form" method="post" action="/profile_edit" enctype="multipart/form-data">
+                <p>
+                  <label for="password">
+                    Новый пароль
+                    <input type="password" id="password" name="password" class="fd ftext" autocomplete="off">
+                  </label>
+                </p>
+                <p>
+                  <label for="confirm_password">Новый пароль (повторно)<input type="password" id="confirm_password" name="confirm_password" class="fd ftext" autocomplete="off"></label>
+                </p>
+                <p>
+                  <label for="surname">Фамилия:<em>*</em><input type="text" id="surname" name="surname" value="Ткаченко" class="fd ftext" placeholder="кириллица"></label>
+                </p>
+                <p>
+                  <label for="name">Имя:<em>*</em><input type="text" id="name" name="name" value="Станіслав" class="fd ftext" placeholder="кириллица"></label>
+                </p>
+                <p>
+                  <label for="middle_name">Отчество:<em>*</em><input type="text" id="middle_name" name="middle_name" value="Олексійович" class="fd ftext" placeholder="кириллица"></label>
+                </p>
+                <p>
+                  <label for="photo">Фото:<input type="file" id="photo" name="photo" class="fd"></label>
+                </p>
+                <p>
+                  <label for="birth_year">Год рождения:<em>*</em><input type="text" id="birth_year" name="birth_year" value="1980" class="fd ftext" placeholder="4 знака"></label>
+                </p>
+                <p>
+                  <label for="christening_year">Год крещения:<em>*</em><input type="text" id="christening_year" name="christening_year" value="1995" class="fd ftext" placeholder="4 знака"></label>
+                </p>
+                <p>
+                  <label for="education">Образование:<em>*</em><input type="text" id="education" name="education" value="вище" class="fd ftext" placeholder="высшее, среднее и т.п."></label>
+                </p>
+                <p>
+                  <label for="specialty">Специальность:<em>*</em><input type="text" id="specialty" name="specialty" value="інженер" class="fd ftext" placeholder="по образованию"></label>
+                </p>
+                <p>
+                  <label for="occupation">Род занятий:<em>*</em><input type="text" id="occupation" name="occupation" value="службовець" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="confession">Конфессия и название церкви:<em>*</em><input type="text" id="confession" name="confession" value="ПЦУ" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="frequency_church">Частота посещения церкви:<em>*</em><input type="text" id="frequency_church" name="frequency_church" value="нед" class="fd ftext" placeholder="нед/м-ц/год"></label>
+                </p>
+                <p>
+                  <label for="frequency_communion">Частота причащения:<em>*</em><input type="text" id="frequency_communion" name="frequency_communion" value="нед" class="fd ftext" placeholder="нед/м-ц/год"></label>
+                </p>
+                <p>
+                  <label for="find_from">Как вы узнали о школе?:<em>*</em><input type="text" id="find_from" name="find_from" value="від друзів" class="fd ftext" placeholder="друзей, FB, объявлений"></label>
+                </p>
+                <p>
+                  <label for="skype">Skype:<input type="text" id="skype" name="skype" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="phone_mob">Контактный тел.:<em>*</em><input type="text" id="phone_mob" name="phone_mob" value="+380971112233" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="phone_work">Контактный тел. #2:<input type="text" id="phone_work" name="phone_work" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="study_break">Оглашение прервано:<input type="text" id="study_break" name="study_break" value="" class="fd ftext" placeholder="год"></label>
+                </p>
+                <p>
+                  <label for="study">Регистрация на<em>*</em>
+                    <select id="study" name="study" class="fd fselect">
+                      <option selected="selected" value="1">3-летний курс</option>
+                      <option value="3">годичный курс воцерковления</option>
+                      <option value="4">Волонтер</option>
+                    </select>
+                  </label>
+                </p>
+                <p>
+                  <label for="city">Страна (дистанц. обучение):<input type="text" id="city" name="city" value="" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="region">Город (дистанц. обучение):<input type="text" id="region" name="region" value="" class="fd ftext"></label></p>
+                <p>
+                  <label for="gmt">UTC±00:00:<input type="text" id="gmt" name="gmt" value="UTC±02:00" class="fd ftext"></label>
+                </p>
+                <p>
+                  <label for="csrf"><input type="hidden" id="csrf" name="csrf" value="MytiMkM2bDZLclFGWG5oWXlCOEFBdz09"></label>
+                </p>
+                <p>
+                  <input type="submit" value="Сохранить" class="fd fbutton">
+                </p>
+              </form>
+            </section>
+            <ul class="tabs__item tab-list">
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 17. Книга Бытия. Быт. 3:8-24
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 16. Книга Бытия. Быт. 3:1-7
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 15. Книга Бытия. Быт. 2
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 14.  Быт. 1-26:31, 2:1-3
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 13. Книга Бытия. Быт. 1-6:25
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 12. Первый день творения
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 11. Толкование библейских
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 10. Писание и его переводы
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 9.  Аргументация существования Бога. Устройство человека
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 8. Основные понятия
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 7. Основные понятия
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+            </ul>
+            <!-- section -->
+            <ul class="tabs__item tab-list">
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  "Иоанн Златоуст: Беседы на Книгу Бытие". Беседа 1.
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 16. Книга Бытия. Быт. 3:1-7
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 15. Книга Бытия. Быт. 2
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <h4>Примечание общее:</h4> 
+                  <p>переходя по гипертекстным ссылкам, руководствуйтесь стандартными примечаниями к предыдущим темам.</p>
+                  <h5>Обязательно:</h5>
+                  <p>1. Ознакомьтесь с видеозаписью лекции «Книга Бытия. Быт. 1:26-31, 2:1-3». Аудиозапись этого занятия выложена в вайбер-группе.</p>
+                  <p>2. Те, кто почему-либо не знаком, ознакомьтесь с вводными статьями к Библии в целом, а также к Пятикнижию.</p>
+                  <p>3. Прочтите отрывки Быт. 1:26-31 и Быт. 2:1-3 в двух переводах (слева - русский синодальный перевод, справа - современный русский перевод РБО).</p>
+                  <p>4. После выполнения пунктов 1-3 перейдите на форум и ответьте на контрольные вопросы.</p>
+                  <p>Не обязательно </p>
+                  <p>(вопросы по этим материалам ставиться не будут):</p>
+                  <p>Рекомендуется прочесть главу <a href="#">«Сотворим человека»</a> из книги «Бог отцов»</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 14.  Быт. 1-26:31, 2:1-3
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 13. Книга Бытия. Быт. 1-6:25
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 12. Первый день творения
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 11. Толкование библейских
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 10. Писание и его переводы
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 6. Аргументация существования Бога. Устройство человека
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 5. Основные понятия
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title hide">
+                  Лекция 4. Основные понятия
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </li>
+            </ul>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <div class="accout__controls modal-form">
+        <a class="control__link" href="http://forum.mediaglagol.com.ua/">Перейти на форум<span class="icon-goo"></span></a>
+        <input class="control__button" type="submit" value="Выйти из аккаунта">
+      </div>
+    </main>
+    <!-- /main block -->
+    <footer class="site-footer">
+      <p class="site-footer__top">
+        <a class="site-footer__logo" href="index.html">
+          <img class="site-footer__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="44" height="42">
+        </a>
+        <strong class="site-footer__title">Православный <br>образовательный проект</strong>
+      </p>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">О нас
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Контакты</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форма волонтера</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Присоединиться:
+          <ul class="site-footer__nav-list site-footer__social-list">
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="facebook.com">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="telegram.org">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">Школа
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Личный кабинет</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Программа</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форум</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Заявка на обучение</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Библиотека
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Разделы</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Словари</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Статьи</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Медиа продукты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="site-footer__copyright">
+        <span>© МЕДИАГЛАГОЛ. Все права сохранены</span>
+      </p>
+    </footer>
+    <svg width="28" height="168" style="display: none;" viewBox="0 0 28 168" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="burger" viewBox="0 0 28 28">
+        <path d="M5 14H23M5 8H23M5 20H23" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="closed" viewBox="0 0 28 28">
+        <path d="M20 8L8 20M8 8L20 20" stroke="#FEFDFD" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="user" viewBox="0 0 28 28">
+        <path d="M22 23V21C22 19.9391 21.5786 18.9217 20.8284 18.1716C20.0783 17.4214 19.0609 17 18 17H10C8.93913 17 7.92172 17.4214 7.17157 18.1716C6.42143 18.9217 6 19.9391 6 21V23M18 9C18 11.2091 16.2091 13 14 13C11.7909 13 10 11.2091 10 9C10 6.79086 11.7909 5 14 5C16.2091 5 18 6.79086 18 9Z" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="search" viewBox="0 0 28 28">
+        <path d="M23 23L18.65 18.65M21 13C21 17.4183 17.4183 21 13 21C8.58172 21 5 17.4183 5 13C5 8.58172 8.58172 5 13 5C17.4183 5 21 8.58172 21 13Z" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 28 28">
+        <path d="M12.0817 20.5567H14.376V14.6674H15.977L16.1503 12.7159H14.376V11.5588C14.376 11.0922 14.4663 10.911 14.9071 10.911H16.1503V8.87842H14.5606C12.8503 8.87842 12.0817 9.64977 12.0817 11.1231V12.7159H10.8838V14.7138H12.0817V20.5567Z"/>
+      </symbol>
+      <symbol id="telegram" viewBox="0 0 28 28">
+        <path d="M19.4566 8.9289C19.3881 8.77734 19.2753 8.65135 19.1337 8.56841C18.9921 8.48546 18.8289 8.44968 18.6665 8.46602C18.4848 8.46759 18.3047 8.50125 18.1342 8.56552C18.0539 8.5958 10.2799 11.637 7.08998 12.978C6.97139 13.0174 6.86208 13.0816 6.76899 13.1665C6.67589 13.2514 6.60104 13.3551 6.54917 13.4712C6.50618 13.6142 6.51448 13.7681 6.57258 13.9054C6.63068 14.0426 6.73476 14.154 6.86605 14.2196C7.83467 14.6064 8.82177 14.9428 9.82357 15.2276C9.99679 15.8073 10.5883 17.8232 10.8671 18.6884C10.9109 18.8038 10.9903 18.9014 11.0933 18.9662C11.1963 19.0311 11.3172 19.0596 11.4375 19.0474H11.5051C11.5791 19.039 11.6472 19.0018 11.6953 18.9436C11.7388 18.8963 11.7656 18.8354 11.7713 18.7706L11.9361 16.3264L13.2036 17.2997C14.1965 18.0568 15.3752 18.9566 16.0386 19.4627C16.2317 19.6198 16.4682 19.7106 16.7146 19.7223C16.9197 19.7066 17.114 19.6216 17.2669 19.4807C17.4198 19.3397 17.5227 19.1509 17.5596 18.9436C18.1046 16.7806 18.9116 12.632 19.389 10.1661L19.4946 9.62539C19.5608 9.39568 19.5474 9.14963 19.4566 8.9289ZM11.3868 15.7337L11.2389 17.8967C10.8798 16.7201 10.3475 14.9075 10.3432 14.8685L16.423 10.815C16.6016 10.6833 16.7944 10.573 16.9977 10.4863C17.2089 10.4387 17.2596 10.5252 17.2216 10.5771C16.9552 10.8657 16.6731 11.1387 16.3766 11.3947L11.5305 15.5044C11.49 15.5277 11.4558 15.5607 11.4307 15.6007C11.4057 15.6407 11.3906 15.6864 11.3868 15.7337Z"/>
+      </symbol>
+    </svg>
+    <script src="js/script.js"></script>
+  </body>
+</html>
