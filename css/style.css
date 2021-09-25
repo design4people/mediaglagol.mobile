@@ -598,6 +598,13 @@ body {
   background-color: rgba(256, 256, 256, 1);
 }
 
+@media (min-width: 960px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
 .page__header {
   padding: 15px;
   padding-top: 61px;
