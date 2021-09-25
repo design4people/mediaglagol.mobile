@@ -901,6 +901,164 @@ body {
   box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.2);
 }
 
+.page__tree {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.account__content.page__content {
+  margin: 0;
+}
+
+.accout__controls {
+  margin: 50px auto;
+  
+  text-align: center;
+}
+
+.control__link {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-right: 28px;
+  line-height: 28px;
+  
+  color: rgba(78, 52, 46, 1);
+  
+  background: no-repeat right top 0px url("../img/external-link.svg");
+  background-size: 28px 28px;
+}
+
+.profile__header {
+  position: relative;
+  margin: 0 30px;
+}
+
+.profile__title {
+  padding: 8px 60px 8px 0;
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(157, 152, 152, 1);
+}
+
+.profile__title span {
+  display: block;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.profile__photo {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__form {
+  margin: 0 auto;
+}
+
+.profile__form input[type="submit"]{
+  display: block;
+  margin: 0 auto;
+}
+
+.tabs__controls {
+  display: flex;
+  width: 100%;
+}
+
+.tabs__control {
+  flex-grow: 1;
+  /* width: 30%; */
+  
+  padding: 5px;
+  border-bottom: solid 4px rgba(196, 196, 196, 1);
+  
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  
+  cursor: pointer;
+}
+
+.tabs__control.is-active {
+  /* width: 30%; */
+  border-bottom: solid 4px rgba(135, 84, 4, 1);
+}
+
+.tabs__item {
+  margin: 14px 0;
+  display: none;
+}
+
+.tabs__item.is-active {
+  display: block;
+}
+
+.tab-list {
+  padding: 0;
+  list-style: none;
+}
+
+.tab-item {
+  margin: 0;
+  padding: 5px 15px;
+  
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.tab-item__title {
+  margin: 8px 0 8px 0;
+  
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(97, 96, 95, 1);
+  
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-item__title.show {
+  color: rgba(135, 84, 4, 1);
+}
+
+.tab-item__content {
+  font-family: PT sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.tab-item__content h4 {
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.tab-item__content h5 {
+  margin: 14px auto;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tab-item__content a {
+  color: rgba(45, 23, 10, 1);
+}
+
 .donation__content {
   font-family: "PT Sans";
 }
