@@ -112,3 +112,22 @@ if (document.querySelector('.tabs__tree') != null) {
     }
   }
 }
+
+// script tabs
+
+let tabs = document.querySelector('.tabs')
+let tabsControl = tabs.querySelectorAll('.tabs__control')
+let content = tabs.querySelectorAll('.tabs__item')
+
+function change(arr, i) {
+  arr.forEach( item => {
+    item.forEach( i => {i.classList.remove('is-active')})
+    item[i].classList.add('is-active')
+  })
+}
+
+for(let i = 0; i < tabsControl.length; i++) {
+  tabsControl[i].addEventListener('click', () => {
+    change([tabsControl, content], i)
+  })
+}
