@@ -91,3 +91,24 @@ if (document.querySelector('.page__tree') != null) {
     }
   }
 }
+
+// script accordion tabs__tree
+
+if (document.querySelector('.tabs__tree') != null) {
+  var tree = document.querySelector('.tabs__tree');
+  
+  tree.onclick = function(event) {
+    if (event.target.tagName != 'H3') return;
+    let childrenContainer = event.target.parentNode.querySelector('div');
+    if (!childrenContainer) return;
+    childrenContainer.hidden = !childrenContainer.hidden;
+    if (childrenContainer.hidden) {
+      event.target.classList.add('hide');
+      event.target.classList.remove('show');
+    }
+    else {
+      event.target.classList.add('show');
+      event.target.classList.remove('hide');
+    }
+  }
+}
