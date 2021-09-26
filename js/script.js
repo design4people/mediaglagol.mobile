@@ -71,23 +71,23 @@ if (slides.length != 0) {
   setInterval(nextSlide, 10000);
 }
 
-// script accordion
+// script accordion page__tree
 
-var tree = document.querySelector('.page__tree');
-
-tree.onclick = function(event) {
-  if (event.target.tagName != 'H3') return;
-  let childrenContainer = event.target.parentNode.querySelector('div');
-  console.log("parentNode.tagName == " + event.target.parentNode.tagName);
-  console.log(childrenContainer);
-  if (!childrenContainer) return;
-  childrenContainer.hidden = !childrenContainer.hidden;
-  if (childrenContainer.hidden) {
-    event.target.classList.add('hide');
-    event.target.classList.remove('show');
-  }
-  else {
-    event.target.classList.add('show');
-    event.target.classList.remove('hide');
+if (document.querySelector('.page__tree') != null) {
+  var tree = document.querySelector('.page__tree');
+  
+  tree.onclick = function(event) {
+    if (event.target.tagName != 'H3') return;
+    let childrenContainer = event.target.parentNode.querySelector('div');
+    if (!childrenContainer) return;
+    childrenContainer.hidden = !childrenContainer.hidden;
+    if (childrenContainer.hidden) {
+      event.target.classList.add('hide');
+      event.target.classList.remove('show');
+    }
+    else {
+      event.target.classList.add('show');
+      event.target.classList.remove('hide');
+    }
   }
 }
