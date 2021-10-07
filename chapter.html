@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>mediaglagol.mobile | chapter.page</title>
+    <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
+    <meta name="description" content="МедиаГлагол - некоммерческий, благотворительный проект, созданный с целью поддержки христианской образовательной и просветительской деятельности">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="format-detection" content="telephone = no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="top" class="inner-page chapter-page">
+    <header class="site-header">
+      <a href="index.html" class="site-header__logo">
+        <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="icon" width="28" viewBox="0 0 28 28">
+            <use class="icon--closed" xlink:href="#closed"></use>
+            <use class="icon--burger" xlink:href="#burger"></use>
+          </svg><span class="visually-hidden">Переключатель меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <form class="main-nav__search">
+            <input class="main-nav__search-input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search-button" type="submit">
+              <svg class="main-nav__search-icon" width="28" viewBox="0 0 28 28">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </form>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="school.html">Школа</a></li>
+            <li class="site-list__item"><a href="library.html">Библиотека</a></li>
+            <li class="site-list__item"><a href="bible.html">Библия онлайн</a></li>
+            <li class="site-list__item"><a href="donation.html">Пожертвования</a></li>
+            <li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li>
+              <a class="user-list__link" href="login.html">
+                <svg class="login__icon" width="28" viewBox="0 0 28 28">
+                  <use xlink:href="#user"></use>
+                </svg>
+                <span>Личный кабинет</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page chapter">
+      <header class="page__header">
+        <p class="breadcrumb"><a href="index.html">Главная </a> > <a href="bible.html">От Матфея </a> > <span>Глава 1</span></p>
+      </header>
+      <div class="chapter__wrapper">
+        <div class="chapter__header">
+          <h1 class="chapter__title page__title">Глава 1</h1>
+          <div class="chapter__pager">
+            <a class="pager__link pager__link--prev pager__link--end" href="/verse/9655">
+              <span class="visually-hidden">предыдущая глава</span>
+            </a>
+            <a class="pager__link pager__link--next" href="/verse/9657">
+              <span class="visually-hidden">следующая глава</span>
+            </a>
+          </div>
+          <label class="chapter__select">
+            <select id="comparison" class="fd fselect" chapter="9656" name="bibleId">
+              <option value="">- Выберите с чем сопоставлять -</option>
+              <option value="60" >Толковая Библия А. Лопухина</option>
+              <option value="6276" >Толкование еп. Михаила (Лузина) на Четвероевангелие и книгу Деяний</option>
+              <option value="6525" >Свт. Андрей Кесарийский</option>
+              <option value="6490" >Свт. Афанасий Великий</option>
+              <option value="6441" >Беда Достопочтенный</option>
+              <option value="6423" >Блаж. Августин</option>
+              <option value="6368" >Свт. Василий Великий</option>
+              <option value="6430" >Свт. Григорий Богослов</option>
+              <option value="6500" >Свт. Григорий Двоеслов</option>
+              <option value="6428" >Свт. Григорий Нисский</option>
+              <option value="6514" >Евфимий Зигабен</option>
+              <option value="6421" >Прп. Ефрем Сирин</option>
+              <option value="6498" >Свт. Иларий Пиктавийский</option>
+              <option value="6369" >Свт. Иоанн Златоуст</option>
+              <option value="6435" >Прп. Исидор Пелусиот</option>
+              <option value="6522" >Прп. Иустин (Попович)</option>
+              <option value="6489" >Мч. Иустин Философ</option>
+              <option value="6488" >Свт. Киприан Карфагенский</option>
+              <option value="6370" >Свт. Кирилл Александрийский</option>
+              <option value="6431" >Свт. Климент Александрийский</option>
+              <option value="6438" >Прп. Максим Исповедник</option>
+              <option value="6424" >Ориген</option>
+              <option value="6487" >Тертулиан</option>
+              <option value="6519" >Троицкие листки</option>
+              <option value="6513" >Свт. Феофан Затворник</option>
+              <option value="6512" >Блаж. Феофилакт Болгарский</option>
+              <option value="2" >Елизаветинская Библия (ЦСП)</option>
+              <option value="5" >Русский Синодальный перевод (РСП/RST)</option>
+              <option value="9" >Русский Синодальный перевод (РСП/RST) + номера Стронга</option>
+              <option value="12" >Новый русский перевод Международного Библейского Общества (НРП/NRT)</option>
+              <option value="15" >Русский перевод Всемирного Библейского Переводческого Центра (БРП/RT)</option>
+              <option value="18" >Современный русский перевод РБО (СРП/РБО)</option>
+              <option value="32" >Библия. Перевод Нового Мира (ПНМ)</option>
+              <option value="35" >Українська Біблія (УБ) у перекладі П. Куліша та І. Пулюя</option>
+              <option value="38" >Український переклад Біблії (УПБ) І. Огієнка</option>
+              <option value="41" >Українська Біблія (УБ) у перекладі І. Хоменка</option>
+              <option value="44" >Українська Біблія (УБ) у перекладі Українського Біблійного Товариства</option>
+              <option value="48" >Бiблiя беларуская. Пераклад В. Сёмухи (тарашкевіца)</option>
+              <option value="52" >Bible King James Version (KJV, 1611)</option>
+              <option value="55" >Bible King James Version (KJV Oxford Authorized Version, 1769)</option>
+              <option value="2154" >Bishop’s Bible (BB, 1568)</option>
+              <option value="2157" >Geneva’s Bible (GB, 1587)</option>
+              <option value="2160" >Darby English Bible (DEB, 1890)</option>
+              <option value="2163" >Young’s Literal Translation (YLT, 1898)</option>
+              <option value="2166" >American Standard Version (ASV, 1901)</option>
+              <option value="2169" >Bible in Basic English (BBE, 1949-1964)</option>
+              <option value="2173" >Lamsa Bible - English Peshitta Translation (EPT, 1957)</option>
+              <option value="2176" >World English Bible (WEB, 2003)</option>
+              <option value="2210" >French Darby Bible</option>
+            </select>
+          </label>
+        </div>      
+        <ul class="page__content chapter__list chapter__content">
+          <li>
+            <a name="v1"></a><a class="verse" href="/comparison/9838"><span id="selection_index1" class="selection_index"></span>1.</a> Павел<span id="selection_index2" class="selection_index"></span> Апостол, <i>избранный</i> не человеками и не через <a class="linkLib" href="javascript: void(0);" wordids="18649">человека</a>,<span id="selection_index3" class="selection_index"></span> но Иисусом Христом<span id="selection_index4" class="selection_index"></span> и <a class="linkLib" href="javascript: void(0);" wordids="18356">Богом</a> Отцем, воскресившим Его из мертвых,
+          </li>
+          <li>
+            <a name="v2"></a><a class="verse" href="/comparison/9838"><span id="selection_index5" class="selection_index"></span>2.</a> и все находящиеся со мною братия — <a class="linkLib" href="javascript: void(0);" wordids="18646">церквам</a> Галатийским:
+          </li>
+          <li>
+            <a name="v3"></a><a class="verse" href="/comparison/9838"><span id="selection_index6" class="selection_index"></span>3.</a> <a class="linkLib" href="javascript: void(0);" wordids="18350">благодать</a> вам и <a class="linkLib" href="javascript: void(0);" wordids="18476">мир</a> от <a class="linkLib" href="javascript: void(0);" wordids="18356">Бога</a> Отца и Господа нашего Иисуса Христа,
+          </li>
+          <li>
+            <a name="v4"></a><a class="verse" href="/comparison/9838"><span id="selection_index7" class="selection_index"></span>4.</a> Который отдал Себя Самого за <a class="linkLib" href="javascript: void(0);" wordids="18395">грехи</a> наши,<span id="selection_index8" class="selection_index"></span> чтобы избавить нас от настоящего лукавого века,<span id="selection_index9" class="selection_index"></span> по воле <a class="linkLib" href="javascript: void(0);" wordids="18356">Бога</a> и Отца нашего;
+          </li>
+          <li>
+            <a name="v5"></a><a class="verse" href="/comparison/9838"><span id="selection_index10" class="selection_index"></span>5.</a> Ему <a class="linkLib" href="javascript: void(0);" wordids="18596">слава</a> во веки веков. <a class="linkLib" href="javascript: void(0);" wordids="18336"><span id="selection_index11" class="selection_index"></span>Аминь</a>.
+          </li>
+          <li>
+            <a name="v6"></a><a class="verse" href="/comparison/9838"><span id="selection_index12" class="selection_index"></span>6.</a> Удивляюсь, что вы от призвавшего вас <a class="linkLib" href="javascript: void(0);" wordids="18350">благодатью</a> Христовою<span id="selection_index13" class="selection_index"></span> так скоро переходите к иному благовествованию,
+          </li>
+          <li>
+            <a name="v7"></a><a class="verse" href="/comparison/9838"><span id="selection_index14" class="selection_index"></span>7.</a> которое <i>впрочем</i> не иное,<span id="selection_index15" class="selection_index"></span> а только есть люди, смущающие вас<span id="selection_index16" class="selection_index"></span> и желающие превратить благовествование Христово.
+          </li>
+          <li>
+            <a name="v8"></a><a class="verse" href="/comparison/9838"><span id="selection_index17" class="selection_index"></span>8.</a> Но если бы даже мы или Ангел с <a class="linkLib" href="javascript: void(0);" wordids="18493">неба</a><span id="selection_index18" class="selection_index"></span> стал благовествовать вам не то, что мы благовествовали вам,<span id="selection_index19" class="selection_index"></span> да будет <a class="linkLib" href="javascript: void(0);" wordids="18337">анафема</a>.
+          </li>
+          <li>
+            <a name="v9"></a><a class="verse" href="/comparison/9838"><span id="selection_index20" class="selection_index"></span>9.</a> Как прежде мы сказали, <i>так</i> и теперь еще говорю:<span id="selection_index21" class="selection_index"></span> кто благовествует вам не то, что вы приняли,<span id="selection_index22" class="selection_index"></span> да будет <a class="linkLib" href="javascript: void(0);" wordids="18337">анафема</a>.
+          </li>
+          <li>
+            <a name="v10"></a><a class="verse" href="/comparison/9838"><span id="selection_index23" class="selection_index"></span>10.</a> У людей ли я ныне <a class="linkLib" href="javascript: void(0);" wordids="18446">ищу</a> благоволения, или у <a class="linkLib" href="javascript: void(0);" wordids="18356">Бога</a>?<span id="selection_index24" class="selection_index"></span> людям ли угождать стараюсь?<span id="selection_index25" class="selection_index"></span> Если бы я и поныне угождал людям, то не был бы <a class="linkLib" href="javascript: void(0);" wordids="18572">рабом</a> Христовым.
+          </li>
+          <li>
+            <a name="v11"></a><a class="verse" href="/comparison/9838"><span id="selection_index26" class="selection_index"></span>11.</a> Возвещаю вам, братия, что <a class="linkLib" href="javascript: void(0);" wordids="18414">Евангелие</a>, которое я благовествовал,<span id="selection_index27" class="selection_index"></span> не есть человеческое,
+          </li>
+          <li>
+            <a name="v12"></a><a class="verse" href="/comparison/9838"><span id="selection_index28" class="selection_index"></span>12.</a> ибо и я принял его и научился не от <a class="linkLib" href="javascript: void(0);" wordids="18649">человека</a>,<span id="selection_index29" class="selection_index"></span> но через <a class="linkLib" href="javascript: void(0);" wordids="18513">откровение</a> Иисуса Христа.
+          </li>
+          <li>
+            <a name="v13"></a><a class="verse" href="/comparison/9838"><span id="selection_index30" class="selection_index"></span>13.</a> Вы слышали о моем прежнем <a class="linkLib" href="javascript: void(0);" wordids="18503">образе</a> <a class="linkLib" href="javascript: void(0);" wordids="18427">жизни</a> в Иудействе,<span id="selection_index31" class="selection_index"></span> что я жестоко гнал <a class="linkLib" href="javascript: void(0);" wordids="18646">Церковь</a> Божию, и опустошал ее,
+          </li>
+          <li>
+            <a name="v14"></a><a class="verse" href="/comparison/9838"><span id="selection_index32" class="selection_index"></span>14.</a> и преуспевал в Иудействе более многих сверстников в <a class="linkLib" href="javascript: void(0);" wordids="18580">роде</a> моем,<span id="selection_index33" class="selection_index"></span> будучи неумеренным ревнителем отеческих моих <a class="linkLib" href="javascript: void(0);" wordids="18550">преданий</a>.
+          </li>
+          <li>
+            <a name="v15"></a><a class="verse" href="/comparison/9838"><span id="selection_index34" class="selection_index"></span>15.</a> Когда же <a class="linkLib" href="javascript: void(0);" wordids="18356">Бог</a>, избравший меня от утробы матери моей<span id="selection_index35" class="selection_index"></span> и призвавший <a class="linkLib" href="javascript: void(0);" wordids="18350">благодатью</a> Своею, благоволил
+          </li>
+          <li>
+            <a name="v16"></a><a class="verse" href="/comparison/9838"><span id="selection_index36" class="selection_index"></span>16.</a> открыть во мне Сына Своего,<span id="selection_index37" class="selection_index"></span> чтобы я благовествовал Его язычникам, —<span id="selection_index38" class="selection_index"></span> я не стал тогда же советоваться с <a class="linkLib" href="javascript: void(0);" wordids="18531">плотью</a> и <a class="linkLib" href="javascript: void(0);" wordids="18461">кровью</a>,
+          </li>
+          <li>
+            <a name="v17"></a><a class="verse" href="/comparison/9838"><span id="selection_index39" class="selection_index"></span>17.</a> и не пошел в <a class="linkLib" href="javascript: void(0);" wordids="18437">Иерусалим</a> к предшествовавшим мне Апостолам,<span id="selection_index40" class="selection_index"></span> а пошел в Аравию, и опять возвратился в Дамаск.
+          </li>
+          <li>
+            <a name="v18"></a><a class="verse" href="/comparison/9838"><span id="selection_index41" class="selection_index"></span>18.</a> Потом, спустя три года,<span id="selection_index42" class="selection_index"></span> ходил я в <a class="linkLib" href="javascript: void(0);" wordids="18437">Иерусалим</a> видеться с <a class="linkLib" href="javascript: void(0);" wordids="18522">Петром</a><span id="selection_index43" class="selection_index"></span> и пробыл у него дней пятнадцать.
+          </li>
+          <li>
+            <a name="v19"></a><a class="verse" href="/comparison/9838"><span id="selection_index44" class="selection_index"></span>19.</a> Другого же из Апостолов я не <a class="linkLib" href="javascript: void(0);" wordids="18367">видел</a> <i>никого</i>,<span id="selection_index45" class="selection_index"></span> кроме Иакова, <a class="linkLib" href="javascript: void(0);" wordids="18362">брата</a> Господня.
+          </li>
+          <li>
+            <a name="v20"></a><a class="verse" href="/comparison/9838"><span id="selection_index46" class="selection_index"></span>20.</a> А в том, что пишу вам, пред <a class="linkLib" href="javascript: void(0);" wordids="18356">Богом</a>, не лгу.
+          </li>
+          <li>
+            <a name="v21"></a><a class="verse" href="/comparison/9838"><span id="selection_index47" class="selection_index"></span>21.</a> После сего отошел я в страны Сирии и Киликии.
+          </li>
+          <li>
+            <a name="v22"></a><a class="verse" href="/comparison/9838"><span id="selection_index48" class="selection_index"></span>22.</a> <a class="linkLib" href="javascript: void(0);" wordids="18646">Церквам</a> Христовым в <a class="linkLib" href="javascript: void(0);" wordids="18453">Иудее</a> лично я не был известен,
+          </li>
+          <li>
+            <a name="v23"></a><a class="verse" href="/comparison/9838"><span id="selection_index49" class="selection_index"></span>23.</a> а только слышали они,<span id="selection_index50" class="selection_index"></span> что гнавший их некогда ныне благовествует <a class="linkLib" href="javascript: void(0);" wordids="18365">веру</a>,<span id="selection_index51" class="selection_index"></span> которую прежде истреблял, —
+          </li>
+          <li>
+            <a name="v24"></a><a class="verse" href="/comparison/9838"><span id="selection_index52" class="selection_index"></span>24.</a> и прославляли за меня <a class="linkLib" href="javascript: void(0);" wordids="18356">Бога</a>.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p class="site-footer__top">
+        <a class="site-footer__logo" href="index.html">
+          <img class="site-footer__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="44" height="42">
+        </a>
+        <strong class="site-footer__title">Православный <br>образовательный проект</strong>
+      </p>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">О нас
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Контакты</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форма волонтера</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Присоединиться:
+          <ul class="site-footer__nav-list site-footer__social-list">
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="facebook.com">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="telegram.org">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">Школа
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Личный кабинет</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Программа</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форум</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Заявка на обучение</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Библиотека
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Разделы</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Словари</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Статьи</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Медиа продукты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="site-footer__copyright">
+        <span>© МЕДИАГЛАГОЛ. Все права сохранены</span>
+      </p>
+    </footer>
+    <svg width="28" height="168" style="display: none;" viewBox="0 0 28 168" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="burger" viewBox="0 0 28 28">
+        <path d="M5 14H23M5 8H23M5 20H23" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="closed" viewBox="0 0 28 28">
+        <path d="M20 8L8 20M8 8L20 20" stroke="#FEFDFD" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="user" viewBox="0 0 28 28">
+        <path d="M22 23V21C22 19.9391 21.5786 18.9217 20.8284 18.1716C20.0783 17.4214 19.0609 17 18 17H10C8.93913 17 7.92172 17.4214 7.17157 18.1716C6.42143 18.9217 6 19.9391 6 21V23M18 9C18 11.2091 16.2091 13 14 13C11.7909 13 10 11.2091 10 9C10 6.79086 11.7909 5 14 5C16.2091 5 18 6.79086 18 9Z" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="search" viewBox="0 0 28 28">
+        <path d="M23 23L18.65 18.65M21 13C21 17.4183 17.4183 21 13 21C8.58172 21 5 17.4183 5 13C5 8.58172 8.58172 5 13 5C17.4183 5 21 8.58172 21 13Z" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 28 28">
+        <path d="M12.0817 20.5567H14.376V14.6674H15.977L16.1503 12.7159H14.376V11.5588C14.376 11.0922 14.4663 10.911 14.9071 10.911H16.1503V8.87842H14.5606C12.8503 8.87842 12.0817 9.64977 12.0817 11.1231V12.7159H10.8838V14.7138H12.0817V20.5567Z"/>
+      </symbol>
+      <symbol id="telegram" viewBox="0 0 28 28">
+        <path d="M19.4566 8.9289C19.3881 8.77734 19.2753 8.65135 19.1337 8.56841C18.9921 8.48546 18.8289 8.44968 18.6665 8.46602C18.4848 8.46759 18.3047 8.50125 18.1342 8.56552C18.0539 8.5958 10.2799 11.637 7.08998 12.978C6.97139 13.0174 6.86208 13.0816 6.76899 13.1665C6.67589 13.2514 6.60104 13.3551 6.54917 13.4712C6.50618 13.6142 6.51448 13.7681 6.57258 13.9054C6.63068 14.0426 6.73476 14.154 6.86605 14.2196C7.83467 14.6064 8.82177 14.9428 9.82357 15.2276C9.99679 15.8073 10.5883 17.8232 10.8671 18.6884C10.9109 18.8038 10.9903 18.9014 11.0933 18.9662C11.1963 19.0311 11.3172 19.0596 11.4375 19.0474H11.5051C11.5791 19.039 11.6472 19.0018 11.6953 18.9436C11.7388 18.8963 11.7656 18.8354 11.7713 18.7706L11.9361 16.3264L13.2036 17.2997C14.1965 18.0568 15.3752 18.9566 16.0386 19.4627C16.2317 19.6198 16.4682 19.7106 16.7146 19.7223C16.9197 19.7066 17.114 19.6216 17.2669 19.4807C17.4198 19.3397 17.5227 19.1509 17.5596 18.9436C18.1046 16.7806 18.9116 12.632 19.389 10.1661L19.4946 9.62539C19.5608 9.39568 19.5474 9.14963 19.4566 8.9289ZM11.3868 15.7337L11.2389 17.8967C10.8798 16.7201 10.3475 14.9075 10.3432 14.8685L16.423 10.815C16.6016 10.6833 16.7944 10.573 16.9977 10.4863C17.2089 10.4387 17.2596 10.5252 17.2216 10.5771C16.9552 10.8657 16.6731 11.1387 16.3766 11.3947L11.5305 15.5044C11.49 15.5277 11.4558 15.5607 11.4307 15.6007C11.4057 15.6407 11.3906 15.6864 11.3868 15.7337Z"/>
+      </symbol>
+      <!-- <symbol id="arrow" viewBox="0 0 6 12"> -->
+        <!-- <path d="M5 11L1 6L5 1" stroke-linecap="round" stroke-linejoin="round"/>' -->
+      <!-- </symbol> -->
+    </svg>
+    <script src="js/script.js"></script>
+  </body>
+</html>
