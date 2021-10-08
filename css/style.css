@@ -988,7 +988,6 @@ body {
 
 .tabs__control {
   flex-grow: 1;
-  /* width: 30%; */
   
   padding: 5px;
   border-bottom: solid 4px rgba(196, 196, 196, 1);
@@ -1002,7 +1001,6 @@ body {
 }
 
 .tabs__control.is-active {
-  /* width: 30%; */
   border-bottom: solid 4px rgba(135, 84, 4, 1);
 }
 
@@ -1040,8 +1038,31 @@ body {
   cursor: pointer;
 }
 
-.tab-item__title.show {
+.tab-item__title--library {
+  position: relative;
+  padding-left: 50px;
+  
+  color: rgba(0, 0, 0, 1);
+}
+
+.tab-item__title.show,
+.tab-item__title--library.show {
   color: rgba(135, 84, 4, 1);
+}
+
+.tab-item__title--library::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  
+  background: center/contain url("../img/arrow.svg") no-repeat;
+}
+
+.tab-item__title--library.show::before {
+  transform: rotate(90deg);
 }
 
 .tab-item__content {
@@ -1065,6 +1086,24 @@ body {
 
 .tab-item__content a {
   color: rgba(45, 23, 10, 1);
+}
+
+.tab-item__list {
+  margin-bottom: 5px;
+  padding-left: 50px;
+  list-style: none;
+}
+
+.tab-item__list li {
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+.tab-item__list a {
+  display: block;
+  padding: 5px 0;
+  color: rgba(97, 96, 95, 1);
+  text-decoration: none;
 }
 
 .donation__content {
