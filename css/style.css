@@ -914,6 +914,36 @@ body {
   margin-bottom: 10px;
 }
 
+.page__search {
+  display: flex;
+  padding: 15px 30px 25px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page__search-input {
+  padding: 6px 14px 6px 14px;
+  width: 100%;
+  height: 18px;
+  
+  font-size: 13px;
+  line-height: 18px;
+  
+  border-radius: 5px 0 0 5px;
+  border: 1px  solid rgba(102, 102, 102, 0.24);
+  border-right: none;
+}
+
+.page__search-button {
+  width: 32px;
+  height: 32px;
+  padding: 2px 2px 3px 3px; 
+  border-radius: 0 5px 5px 0;
+  border: none;
+  
+  background-color: rgba(135, 84, 4, 1);
+}
+
 .account__content.page__content {
   margin: 0;
 }
