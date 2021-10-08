@@ -1074,6 +1074,81 @@ body {
   margin: 5px;
 }
 
+.comparison {
+  margin-bottom: 15px;
+}
+
+.comparison__close {
+  position: relative;
+  display: block;
+  margin-right: 85px;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  
+  border-radius: 4px;
+  
+  background-color: rgba(203, 157, 79, 1);
+}
+
+.comparison__close::before,
+.comparison__close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  
+  background-color: #ffffff;
+}
+
+.comparison__close::before {
+  transform: rotate(45deg);
+}
+
+.comparison__close::after {
+  transform: rotate(-45deg);
+}
+
+.comparison__content {
+  margin: 0;
+  /* margin-bottom: 15px; */
+  height: calc(50vh - 85px);
+  border-radius: 4px;
+  
+  box-shadow: 0 0 0 1px rgba(196, 196, 196, 1);
+  overflow: scroll;
+}
+
+.comparison__content a {
+  color: rgba(135, 84, 4, 1);
+}
+
+.comparison__content p {
+  margin: 5px;
+}
+
+@media all and (orientation:landscape) {
+  .comparison-page .chapter__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .comparison:first-child {
+    margin-right: 15px;
+  }
+  
+  .comparison {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  
+  .comparison__content.page__content {
+    height: calc(100vh - 125px);
+  }
+}
+
 .account__content.page__content {
   margin: 0;
 }
