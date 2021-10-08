@@ -607,7 +607,7 @@ body {
 
 .page__header {
   padding: 15px;
-  padding-top: 61px;
+  padding-top: 62px;
 }
 
 .school-page .page__header {
@@ -615,6 +615,14 @@ body {
   padding-bottom: 16px;
   
   background: url("../img/bg_school.jpg") no-repeat top center;
+  background-size: auto 210px;
+}
+
+.bible-page .page__header {
+  padding: 210px 16px;
+  padding-bottom: 16px;
+  
+  background: url("../img/bg_bible.jpg") no-repeat top center;
   background-size: auto 210px;
 }
 
