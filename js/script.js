@@ -77,7 +77,7 @@ if (document.querySelector('.page__tree') != null) {
   var tree = document.querySelector('.page__tree');
   
   tree.onclick = function(event) {
-    if (event.target.tagName != 'H3') return;
+    if (event.target.tagName != 'H2') return;
     let childrenContainer = event.target.parentNode.querySelector('div');
     if (!childrenContainer) return;
     childrenContainer.hidden = !childrenContainer.hidden;
