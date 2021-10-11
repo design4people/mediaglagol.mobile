@@ -1052,6 +1052,7 @@ body {
 
 .chapter__content {
   height: calc(100vh - 125px);
+  min-height: 195px;
   border-radius: 4px;
   
   box-shadow: 0 0 0 1px rgba(196, 196, 196, 1);
