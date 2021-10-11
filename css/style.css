@@ -961,6 +961,18 @@ body {
   margin-bottom: 50px;
 }
 
+@media all and (orientation:landscape) {
+  .chapter .page__header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .chapter__wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
 .chapter__header {
   display: flex;
   margin-bottom: 10px;
