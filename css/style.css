@@ -1146,6 +1146,7 @@ body {
   
   .comparison__content.page__content {
     height: calc(100vh - 125px);
+    min-height: 195px;
   }
 }
 
