@@ -1437,10 +1437,10 @@ body {
 .page-content__button::before {
   position: absolute;
   content: "";
-  width: 28px;
-  height: 28px;
-  top: 6px;
-  left: 40px;
+  width: 18px;
+  height: 18px;
+  top: 12px;
+  left: 48px;
   background-image: url("../img/music.svg");
 }
 
