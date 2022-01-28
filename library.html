@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>mediaglagol.mobile | library.page</title>
+    <meta name="keywords" content="православие, катехизис, оглашение, огласительная школа, библия, изучение, толкование, сопоставление">
+    <meta name="description" content="МедиаГлагол - некоммерческий, благотворительный проект, созданный с целью поддержки христианской образовательной и просветительской деятельности">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="format-detection" content="telephone = no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="top" class="inner-page library-page">
+    <header class="site-header">
+      <a href="index.html" class="site-header__logo">
+        <img class="site-header__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="43" height="47">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <svg class="icon" width="28" viewBox="0 0 28 28">
+            <use class="icon--closed" xlink:href="#closed"></use>
+            <use class="icon--burger" xlink:href="#burger"></use>
+          </svg><span class="visually-hidden">Переключатель меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <form class="main-nav__search">
+            <input class="main-nav__search-input" type="text" name="search" placeholder="Поиск..." aria-label="search query" required>
+            <button class="main-nav__search-button" type="submit">
+              <svg class="main-nav__search-icon" width="28" viewBox="0 0 28 28">
+                <use xlink:href="#search"></use>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </form>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="school.html">Школа</a></li>
+            <li class="site-list__item site-list__item--active"><a href="#">Библиотека</a></li>
+            <li class="site-list__item"><a href="bible.html">Библия онлайн</a></li>
+            <li class="site-list__item"><a href="comparison.html" style="color: rgba(112, 222, 246, 1);" >Сопоставление</a></li>
+            <li class="site-list__item"><a href="donation.html">Пожертвования</a></li>
+            <li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li>
+              <a class="user-list__link" href="login.html">
+                <svg class="login__icon" width="28" viewBox="0 0 28 28">
+                  <use xlink:href="#user"></use>
+                </svg>
+                <span>Личный кабинет</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <svg class="social__icon--main-nav" width="32" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page">
+      <header class="page__header">
+        <p class="breadcrumb"><a href="index.html">Главная </a> > <span>Библиотека</span></p>
+        <h1 class="page__title page__title--uppercase">Библиотека</h1>
+      </header>
+      <section class="page__content library__content">
+        <h2 class="visually-hidden">Поиск по тексту</h2>
+        <form class="page__search">
+          <input class="page__search-input" type="text" name="search" placeholder="Поиск по библиотеке" aria-label="search query" required>
+          <button class="page__search-button" type="submit">
+            <svg class="page__search-icon" width="28" viewBox="0 0 28 28">
+              <use xlink:href="#search"></use>
+            </svg>
+            <span class="visually-hidden">Поиск</span>
+          </button>
+        </form>
+      </section>
+      <section class="page__content library__content">
+        <div class="tabs">
+          <div class="tabs__controls">
+            <a class="tabs__control is-active">Разделы</a>
+            <a class="tabs__control">Авторы</a>
+            <a class="tabs__control">Названия</a>
+          </div>
+          <div class="tabs__content tabs__tree">
+            <!-- section -->
+            <ul class="tabs__item tab-list is-active">
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  Библейский отдел
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a href="#">Переводы Библии</a></li>
+                    <li><a href="#">Комментарии и толкования</a></li>
+                    <li><a href="#">Исагогика</a></li>
+                    <li><a href="#">Герменевтика</a></li>
+                    <li><a href="#">Экзегетика</a></li>
+                    <li><a href="#">Текстология</a></li>
+                    <li><a href="#">Энциклопедии и словари</a></li>
+                    <li><a href="#">Археология и география</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  Теология
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a href="#">Основное богословие (апологетика)</a></li>
+                    <li><a href="#">Догматическое богословие, катехетика и правила церковных соборов</a></li>
+                    <li><a href="#">Сравнительное богословие</a></li>
+                    <li><a href="#">Нравственное богословие</a></li>
+                    <li><a href="#">Экклезиология</a></li>
+                    <li><a href="#">Литургика и литургическое богословие</a></li>
+                    <li><a href="#">Каноническое право</a></li>
+                    <li><a href="#">Патристика</a></li>
+                    <li><a href="#">Патрология</a></li>
+                    <li><a href="#">Гомилетика</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  Личная и общественная молитва
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a href="#">Личная молитва</a></li>
+                    <li><a href="#">Общественная молитва</a></li>
+                    <li><a href="#">Общие вопросы</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  История
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a href="#">История мира</a></li>
+                    <li><a href="#">История Израиля</a></li>
+                    <li><a href="#">История Руси</a></li>
+                    <li><a href="#">История древней Христианской Церкви</a></li>
+                    <li><a href="#">История христианства на Руси</a></li>
+                    <li><a href="#">История Русской Православной Церкви</a></li>
+                    <li><a href="#">История Украинской Православной Церкви</a></li>
+                    <li><a href="#">Документы церковных соборов</a></li>
+                    <li><a href="#">Церковные образования в новейшей истории</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  Философия
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a target="_self" href="/book/strah_i_trepet_dialekticheskaya_lirika_iohannesa_de_silentsio_perevod_nvisaevoyi_i_saisaeva"><u>Сёрен Кьеркегор</u>: Страх и трепет. Диалектическая лирика Иоханнеса де Силенцио</a></li>
+                    <li><a target="_self" href="/book/filosofiya_prava_pyatiknijiya_sbornik_stateyi"><u>Сборник статей</u>: Философия права Пятикнижия</a></li>
+                    <li><a target="_self" href="/book/ontologicheskoe_dokazatelstvo_bytiya_boga"><u>Семен Франк</u>: Онтологическое доказательство бытия Бога</a></li>
+                    <li><a target="_self" href="/book/nepostijimoe_ontologicheskoe_vvedenie_v_filosofiyu_religii"><u>Семен Франк</u>: Непостижимое. Онтологическое введение в философию религии</a></li>
+                    <li><a target="_self" href="/book/predmet_znaniya"><u>Семен Франк</u>: Предмет знания</a></li>
+                    <li><a target="_self" href="/book/filosoficheskie_pisma"><u>Петр Чаадаев</u>: Философические письма</a></li>
+                    <li><a target="_self" href="/book/o_dostoinstve_hristianstva_i_nedostoinstve_hristian"><u>Николай Бердяев</u>: О достоинстве христианства и недостоинстве христиан</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tab-item">
+                <h3 class="tab-item__title tab-item__title--library hide">
+                  Литература
+                </h3>
+                <div class="tab-item__content" hidden="">
+                  <ul class="tab-item__list">
+                    <li><a target="_self" href="/book/krestonoshenie"><u>Свт. Игнатий (Брянчанинов)</u>: Крестоношение</a></li>
+                    <li><a target="_self" href="/book/slovo_o_smerti"><u>Свт. Игнатий (Брянчанинов)</u>: Слово о смерти</a></li>
+                    <li><a target="_self" href="/book/put_ko_spaseniyu"><u>Феофан Затворник</u>: Путь ко спасению</a></li>
+                    <li><a target="_self" href="/book/mat_mariya"><u>Сергий Гаккель</u>: Мать Мария</a></li>
+                    <li><a target="_self" href="/book/svyatye_drevneyi_rusi"><u>Георгий Федотов</u>: Святые древней Руси</a></li>
+                    <li><a target="_self" href="/book/skazanie_ob_ade_i_rae_ili_rastorjenie_braka"><u>Клайв Стейплз Льюис</u>: Сказание об аде и рае, или Расторжение брака</a></li>
+                    <li><a target="_self" href="/book/pisma_balamuta"><u>Клайв Стейплз Льюис</u>: Письма Баламута</a></li>
+                    <li><a target="_self" href="/book/sila_i_slava"><u>Грэм Грин</u>: Сила и слава</a></li>
+                    <li><a target="_self" href="/book/zapisi"><u>Алекcандр Ельчанинов</u>: Записи</a></li>
+                    <li><a target="_self" href="/book/pisma_k_malkolmu"><u>Клайв Стейплз Льюис</u>: Письма к Малькольму</a></li>
+                    <li><a target="_self" href="/book/mysli_o_dobre_i_zle"><u>Николай Сербский</u>: Мысли о добре и зле</a></li>
+                    <li><a target="_self" href="/book/o_nachalah_jizni"><u>Игумен Никон (Воробьев)</u>: О началах жизни</a></li>
+                    <li><a target="_self" href="/book/iuda_esse"><u>Анатолий Жураковский</u>: Иуда (эссе)</a></li>
+                    <li><a target="_self" href="/book/otets_aleksandr_men_otvechaet_na_voprosy_slushateleyi">Отец Александр Мень отвечает на вопросы слушателей</a></li>
+                    <li><a target="_self" href="/book/prosto_hristianstvo"><u>Клайв Стейплз Льюис</u>: Просто христианство</a></li>
+                    <li><a target="_self" href="/book/otets_aleksandr_men_hristov_svidetel_v_nashe_vremya"><u>Ив Аман</u>: Отец Александр Мень. Христов свидетель в наше время</a></li>
+                    <li><a target="_self" href="/book/vospominaniya"><u>Фудель Сергей Иосифович</u>: Воспоминания</a></li>
+                    <li><a target="_self" href="/book/vospominaniya_ob_aleksandre_aleksandroviche_glagoleve"><u>Магдалина Глагольева-Пальян</u>: Воспоминания об Александре Александровиче Глаголеве</a></li>
+                    <li><a target="_self" href="/book/molitva_i_jizn"><u>Антоний, митрополит Сурожский</u>: Молитва и Жизнь</a></li>
+                    <li><a target="_self" href="/book/dalekiyi_put_istoriya_odnoyi_hristianskoyi_obschiny"><u>Архимандрит Сергий (Савельев)</u>: Далекий путь. История одной христианской общины</a></li>
+                    <li><a target="_self" href="/book/nastignut_radostyu"><u>Клайв Стейплз Льюис</u>: Настигнут радостью. Духовная автобиография</a></li>
+                    <li><a target="_self" href="/book/dialogi"><u>Валентин Свенцицкий</u>: Диалоги</a></li>
+                    <li><a target="_self" href="/book/chto_takoe_tserkovnost"><u>Мария Скобцова</u>: Наcтоящее и будущее Цеpкви. Что такое церковность</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!-- / section -->
+            <!-- authors -->
+            <ul class="tabs__item tab-list">
+              <li class="tab-item">
+                <div><b>По буквам</b></div>
+                <ul class="alphabet alphabet__list">
+                  <li class="alphabet__item">А</li>
+                  <li class="alphabet__item">Б</li>
+                  <li class="alphabet__item">В</li>
+                  <li class="alphabet__item">Г</li>
+                  <li class="alphabet__item">Д</li>
+                  <li class="alphabet__item">Е</li>
+                  <li class="alphabet__item">Ж</li>
+                  <li class="alphabet__item">З</li>
+                  <li class="alphabet__item alphabet__item--active">И</li>
+                  <li class="alphabet__item">К</li>
+                  <li class="alphabet__item">Л</li>
+                  <li class="alphabet__item">М</li>
+                  <li class="alphabet__item">Н</li>
+                  <li class="alphabet__item">О</li>
+                  <li class="alphabet__item">П</li>
+                  <li class="alphabet__item">Р</li>
+                  <li class="alphabet__item">С</li>
+                  <li class="alphabet__item">Т</li>
+                  <li class="alphabet__item">У</li>
+                  <li class="alphabet__item">Ф</li>
+                  <li class="alphabet__item">Х</li>
+                  <li class="alphabet__item">Ц</li>
+                  <li class="alphabet__item">Ч</li>
+                  <li class="alphabet__item">Ш</li>
+                  <li class="alphabet__item">Щ</li>
+                  <li class="alphabet__item">Э</li>
+                  <li class="alphabet__item">Ю</li>
+                  <li class="alphabet__item">Я</li>
+                </ul>
+              </li>
+              <li class="tab-item">
+                <div>Авторы на букву <b>И</b></div>
+                <ul class="tab-list">
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Игнатий Антиохийский
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ignatiyi_antiohiyiskiyi_poslanie_k_efesyanam">Послание к Ефесянам</a></li>
+                        <li><a href="/book/ignatiyi_antiohiyiskiyi_poslanie_k_magneziyitsam">Послание к магнезийцам</a></li>
+                        <li><a href="/book/ignatiyi_antiohiyiskiyi_poslanie_k_rimlyanam">Послание к Римлянам</a></li>
+                        <li><a href="/book/ignatiyi_antiohiyiskiyi_poslanie_k_tralliyitsam">Послание к Траллийцам</a></li>
+                        <li><a href="/book/ignatiyi_antiohiyiskiyi_poslanie_k_filadelfiyitsam">Послание к Филадельфийцам</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Игнатий Лойола
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ignatiyi_loyiola_duhovnye_uprajneniya">Духовные упражнения</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иероним Стридонский
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ieronim_stridonskiyi_o_znamenityh_mujah">О знаменитых мужах</a></li>
+                        <li><a href="/book/ieronim_stridontskiyi_pismo_k_pammahiyu_o_nailuchshem_sposobe_perevoda">Письмо к Паммахию о наилучшем способе перевода</a></li>
+                        <li><a href="/book/ieronim_stridonskiyi_skazanie_o_dobrodetelyah_blajennoyi_pavly">Сказание о добродетелях блаженной Павлы</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иларион Киевский
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ilarion_kievskiyi_molitva">Молитва</a></li>
+                        <li><a href="/book/ilarion_kievskiyi_slovo_o_zakone_i_blagodati">Слово о Законе и Благодати</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иоанн Дамаскин
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ioann_damaskin_tochnoe_izlojenie_pravoslavnoyi_very">Точное изложение православной веры</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иоанн Златоуст
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ioann_zlatoust_besedy_na_poslanie_k_rimlyanam">Беседы на Послание к Римлянам</a></li>
+                        <li><a href="/book/ioann_zlatoust_bojestvennaya_liturgiya">Божественная литургия</a></li>
+                        <li><a href="/book/ioann_zlatoust_kniga_o_devstve">Книга о девстве</a></li>
+                        <li><a href="/book/ioann_zlatoust_rassujdenie_protiv_iudeev_i_yazychnikov">Рассуждение против иудеев и язычников</a></li>
+                        <li><a href="/book/ioann_zlatoust_slovo_na_novyyi_god">Слово на Новый год</a></li>
+                        <li><a href="/book/ioann_zlatoust_slovo_o_proklyatii">Слово о проклятии</a></li>
+                        <li><a href="/book/ioann_zlatoust_sravnenie_vlasti_s_lyubomudriem_monasheskoyi_jizni">Сравнение власти с любомудрием монашеской жизни</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иоанн Лествичник
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ioann_lestvichnik_lestvitsa">Лествица</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иосиф Флавий
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/iosif_flaviyi_iudeyiskaya_voyina">Иудейская война</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Ипполит Римский
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/ippolit_rimskiyi_poslanie_k_diognetu">Послание к Диогнету</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Ириней Лионский
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/irineyi_lionskiyi_dokazatelstvo_apostolskoyi_propovedi">Доказательство апостольской проповеди</a></li>
+                        <li><a href="/book/irineyi_lionskiyi_istoriya_sv_patriarha_saaka_i_vardapeta_mashtotsa">История св. патриарха Саака и вардапета Маштоца</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="tab-item">
+                    <h3 class="tab-item__title tab-item__title--library hide">
+                      Иустин Мученик
+                    </h3>
+                    <div class="tab-item__content" hidden="">
+                      <ul class="tab-item__list">
+                        <li><a href="/book/iustin_muchenik_apologiya_vtoraya">Апология вторая</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="tab-item">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link pagination__link--active">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 2">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 3">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 4">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 5">5</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- / authors -->
+            <!-- works -->
+            <ul class="tabs__item tab-list">
+              <li class="tab-item">
+                <div><b>По буквам</b></div>
+                <ul class="alphabet alphabet__list">
+                  <li class="alphabet__item">А</li>
+                  <li class="alphabet__item">Б</li>
+                  <li class="alphabet__item">В</li>
+                  <li class="alphabet__item">Г</li>
+                  <li class="alphabet__item alphabet__item--active">Д</li>
+                  <li class="alphabet__item">Е</li>
+                  <li class="alphabet__item">Ж</li>
+                  <li class="alphabet__item">З</li>
+                  <li class="alphabet__item">И</li>
+                  <li class="alphabet__item">К</li>
+                  <li class="alphabet__item">Л</li>
+                  <li class="alphabet__item">М</li>
+                  <li class="alphabet__item">Н</li>
+                  <li class="alphabet__item">О</li>
+                  <li class="alphabet__item">П</li>
+                  <li class="alphabet__item">Р</li>
+                  <li class="alphabet__item">С</li>
+                  <li class="alphabet__item">Т</li>
+                  <li class="alphabet__item">У</li>
+                  <li class="alphabet__item">Ф</li>
+                  <li class="alphabet__item">Х</li>
+                  <li class="alphabet__item">Ц</li>
+                  <li class="alphabet__item">Ч</li>
+                  <li class="alphabet__item">Ш</li>
+                  <li class="alphabet__item">Щ</li>
+                  <li class="alphabet__item">Э</li>
+                  <li class="alphabet__item">Ю</li>
+                  <li class="alphabet__item">Я</li>
+                </ul>
+              </li>
+              <li class="tab-item">
+                <div>Произведения на букву <b>Д</b></div>
+                <ul>
+                  <li class="yyy">
+                    <a href="/book/dalekiyi_put_istoriya_odnoyi_hristianskoyi_obschiny">Далекий путь. История одной христианской общины</a> <i>Архимандрит Сергий (Савельев)</i>
+                  </li>
+                  <li class="yyy">
+                    <a href="/book/dialogi">Диалоги</a> <i>Валентин Свенцицкий</i>
+                  </li>
+                  <li class="yyy">
+                    <a href="/book/dogmaticheskoe_bogoslovie">Догматическое богословие</a> <i>Владимир Лосский</i>
+                  </li>
+                  <li class="yyy">
+                    <a href="/book/dogmaticheskoe_bogoslovie_2015">Догматическое богословие</a> <i>Олег Давыденков</i>
+                  </li>
+                  <li class="yyy">
+                    <a href="/book/drevniyi_shumer_ocherki_kultury">Древний Шумер. Очерки культуры</a> <i>Владимир Емельянов</i>
+                  </li>
+                  <li class="yyy">
+                    <a href="/book/drevnyaya_mesopotamiya_portret_pogibsheyi_tsivilizatsii">Древняя Месопотамия. Портрет погибшей цивилизации</a> <i>Адольф Лео Оппенгейм</i>
+                  </li>
+                </ul>
+              </li>
+              <li class="tab-item">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link pagination__link--active">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 2">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 3">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 4">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" title="Go to page 5">5</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- / works -->
+          </div>
+        </div>
+      </section>
+      <section class="page__content library__content page__tree">
+        <button class="page-content__button hide" type="button">
+          Медиа продукты
+        </button>
+        <div class="page-content__wrapper" hidden="">
+          <header class="page-content__header page-content__header--media">
+            <h2 class="page-content__title">Медиа продукты</h2>
+          </header>
+          <p class="main-item__text page-content__text">В разделе помещены разработки волонтерских групп и отдельных волонтеров. Среди них имеются комментированные произведения по христианской аскетике, видео, аудио и другие материалы просветительского и художественного плана.</p>
+          <ul>
+            <li>Видео</li>
+            <li>Музыка</li>
+            <li>Озвученная литература</li>
+          </ul>
+          <p class="page-content__text">Наши цели - разработка инструментов для исследователей и авторов, работающих в областях библеистики и богословия, а также создание условий для углубленного изучения Библии и богословия всеми желающими. Мы стремимся к распространению церковного предания в мире.</p>
+          <p class="page-content__text">Если вы готовы принять участие в нашем проекте, обладаете соответствующей квалификацией и желаете потрудиться ради славы Божией, станьте <a href="#">нашим волонтером.</a></p>
+        </div>
+      </section>
+      <section class="page__content library__content library__content--about">
+        <header class="page-content__header page-content__header--library">
+          <h2 class="page-content__title">О библиотеке</h2>
+        </header>
+        <p class="page-content__text"><strong>Состав библиотеки определяется целями христианского образования и программой катехизации</strong></p>
+        <p class="page-content__text">Библиотека содержит разнообразный контент по философии, истории, теологии, художественной литературе, искусству и культуре. Ее функциональность создавалась, как набор инструментов для углубленного изучения Св. Писания, а также научной и литературной деятельности, в определенной степени, касающихся библеистики, теологии и истории.</p>
+        <p class="page-content__text">Библиотечный контент представлен книгами, справочниками и отдельными статьями, отнесенным к узлам древовидной структуры, состоящей из разделов и подразделов по предметным областям, с произвольной глубиной вложения и, наконец, книг и статей.</p>
+        <p class="page-content__text">Имеется также возможность получения списков литературы, упорядоченных по авторам или названиям, и поиска определенного элемента контента.</p>
+        <p class="page-content__text"><strong>Функционал библиотеки позволяет:</strong></p>
+        <p class="page-content__text">а) корректно цитировать элементы библейских текстов в любых варианах перевода, с указанием из какого именно варианта Библии взята цитата;</p>
+        <p class="page-content__text">б) проверять библейские цитаты, используя встроенные в цитаты возвратные ссылки;</p>
+        <p class="page-content__text">в) получать справки по любым понятиям, встречающимся в библиотечном контенте, «одним кликом» сразу из всех имеющихся в системе словарей и баз данных;</p>
+        <p class="page-content__text">г) раскрывать и сворачивать «одним кликом» имеющиеся ссылки на том месте, где они находятся;</p>
+        <p class="page-content__text">д) «кликнув» на любом номере стиха Библии, просматривать, сопоставлять и синхронизировать (по названиям книг, номерам глав и стихов) содержание другого варианта перевода Библии или текста, имеющего схожую с Библией структуру или специально приближенную к ней. Например, научные тексты по библеистике, а также различные библейские комментарии, имеющиеся в библиотеке;</p>
+        <p class="page-content__text">е) сопоставлять различные варианты переводов Библии;</p>
+        <p class="page-content__text">ж) комфортно читать тексты, оставляя закладки для быстрого последующего возврата. </p>
+        <p class="page-content__text"><strong>О порядке и правилах использования фонда библиотеки</strong></p>
+        <p class="page-content__text">Книги в электронном формате, для которых на нашем портале предусмотрены инструменты скачивания, вы можете свободно загружать на свои устройства и использовать с целью христианского образования.</p>
+        <p class="page-content__text"><strong>В плане некоторых ограничений пользования, фонд библиотеки делится на три части:</strong></p>
+        <p class="page-content__text">1. Часть, на которую авторское право не действует.</p>
+        <p class="page-content__text">2. Часть, на которую нашим издательством получено право распространения со своего сайта от правообладателей. Последнее означает, что их пересылка помимо нашего сайта нарушает права тех, кем они предоставлены. Мы не контролируем ваших действий, но рассчитываем на то, что вы будете поступать правомерно, давая заинтересованным лицам ссылку на этот сайт, откуда они смогут получить нужную им книгу.</p>
+        <p class="page-content__text">3. Часть, на которую у издательства нет права свободного распространения. Для книг из этой части у нас отсутствуют инструменты скачивания, но могут быть даны ссылки на другие источники.</p>
+        <p class="page-content__text"><strong>О возможностях, предоставляемых читателям</strong></p>
+        <p class="page-content__text">Вы можете скачивать книги целиком или отдельными частями (например: Библия и ее отдельные книги), если такая возможность для данной книги поддержана на нашем сайте.</p>
+        <p class="page-content__text">Во всех случаях вы можете читать книгу прямо на сайте, что рекомендуется, т.к. только в этом случае вы можете воспользоваться всем тем, что описано выше (см. пункт «Функционал библиотеки позволяет»).</p>  
+        <p class="page-content__text"><strong>Обращайте внимание на указания возможностей использования каждой книги</strong></p>
+      </section>
+      <div class="page__link--up"><a href="#top">Наверх</a></div>
+    </main>
+    <footer class="site-footer">
+      <p class="site-footer__top">
+        <a class="site-footer__logo" href="index.html">
+          <img class="site-footer__logo-image" alt="Логотип МедиаГлагол" src="img/logo.png" width="44" height="42">
+        </a>
+        <strong class="site-footer__title">Православный <br>образовательный проект</strong>
+      </p>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">О нас
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Контакты</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форма волонтера</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Присоединиться:
+          <ul class="site-footer__nav-list site-footer__social-list">
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="facebook.com">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="site-footer__social-item">
+              <a class="site-footer__social-link" href="telegram.org">
+                <svg class="social__icon" width="26" viewBox="0 0 28 28">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Телеграмe</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="site-footer__nav">
+        <li class="site-footer__nav-section">Школа
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Личный кабинет</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Программа</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Форум</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Заявка на обучение</a></li>
+          </ul>
+        </li>
+        <li class="site-footer__nav-section">Библиотека
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Разделы</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Словари</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Статьи</a></li>
+            <li class="site-footer__nav-item"><a class="site-footer__nav-link" href="#">Медиа продукты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="site-footer__copyright">
+        <span>© МЕДИАГЛАГОЛ. Все права сохранены</span>
+      </p>
+    </footer>
+    <svg width="28" height="196" style="display: none;" viewBox="0 0 28 196" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="burger" viewBox="0 0 28 28">
+        <path d="M5 14H23M5 8H23M5 20H23" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="closed" viewBox="0 0 28 28">
+        <path d="M20 8L8 20M8 8L20 20" stroke="#white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="user" viewBox="0 0 28 28">
+        <path d="M22 23V21C22 19.9391 21.5786 18.9217 20.8284 18.1716C20.0783 17.4214 19.0609 17 18 17H10C8.93913 17 7.92172 17.4214 7.17157 18.1716C6.42143 18.9217 6 19.9391 6 21V23M18 9C18 11.2091 16.2091 13 14 13C11.7909 13 10 11.2091 10 9C10 6.79086 11.7909 5 14 5C16.2091 5 18 6.79086 18 9Z" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="search" viewBox="0 0 28 28">
+        <path d="M23 23L18.65 18.65M21 13C21 17.4183 17.4183 21 13 21C8.58172 21 5 17.4183 5 13C5 8.58172 8.58172 5 13 5C17.4183 5 21 8.58172 21 13Z" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 28 28">
+        <path d="M12.0817 20.5567H14.376V14.6674H15.977L16.1503 12.7159H14.376V11.5588C14.376 11.0922 14.4663 10.911 14.9071 10.911H16.1503V8.87842H14.5606C12.8503 8.87842 12.0817 9.64977 12.0817 11.1231V12.7159H10.8838V14.7138H12.0817V20.5567Z"/>
+      </symbol>
+      <symbol id="telegram" viewBox="0 0 28 28">
+        <path d="M19.4566 8.9289C19.3881 8.77734 19.2753 8.65135 19.1337 8.56841C18.9921 8.48546 18.8289 8.44968 18.6665 8.46602C18.4848 8.46759 18.3047 8.50125 18.1342 8.56552C18.0539 8.5958 10.2799 11.637 7.08998 12.978C6.97139 13.0174 6.86208 13.0816 6.76899 13.1665C6.67589 13.2514 6.60104 13.3551 6.54917 13.4712C6.50618 13.6142 6.51448 13.7681 6.57258 13.9054C6.63068 14.0426 6.73476 14.154 6.86605 14.2196C7.83467 14.6064 8.82177 14.9428 9.82357 15.2276C9.99679 15.8073 10.5883 17.8232 10.8671 18.6884C10.9109 18.8038 10.9903 18.9014 11.0933 18.9662C11.1963 19.0311 11.3172 19.0596 11.4375 19.0474H11.5051C11.5791 19.039 11.6472 19.0018 11.6953 18.9436C11.7388 18.8963 11.7656 18.8354 11.7713 18.7706L11.9361 16.3264L13.2036 17.2997C14.1965 18.0568 15.3752 18.9566 16.0386 19.4627C16.2317 19.6198 16.4682 19.7106 16.7146 19.7223C16.9197 19.7066 17.114 19.6216 17.2669 19.4807C17.4198 19.3397 17.5227 19.1509 17.5596 18.9436C18.1046 16.7806 18.9116 12.632 19.389 10.1661L19.4946 9.62539C19.5608 9.39568 19.5474 9.14963 19.4566 8.9289ZM11.3868 15.7337L11.2389 17.8967C10.8798 16.7201 10.3475 14.9075 10.3432 14.8685L16.423 10.815C16.6016 10.6833 16.7944 10.573 16.9977 10.4863C17.2089 10.4387 17.2596 10.5252 17.2216 10.5771C16.9552 10.8657 16.6731 11.1387 16.3766 11.3947L11.5305 15.5044C11.49 15.5277 11.4558 15.5607 11.4307 15.6007C11.4057 15.6407 11.3906 15.6864 11.3868 15.7337Z"/>
+      </symbol>
+      <symbol id="music" viewBox="0 0 28 28">
+        <path d="M11 19H7C6.46957 19 5.96086 19.2107 5.58579 19.5858C5.21071 19.9609 5 20.4696 5 21C5 21.5305 5.21071 22.0392 5.58579 22.4142C5.96086 22.7893 6.46957 23 7 23H9C9.53043 23 10.0391 22.7893 10.4142 22.4142C10.7893 22.0392 11 21.5305 11 21V19ZM11 19V7L23 5V17L11 19ZM23 17H19C18.4696 17 17.9609 17.2107 17.5858 17.5858C17.2107 17.9609 17 18.4696 17 19C17 19.5305 17.2107 20.0392 17.5858 20.4142C17.9609 20.7893 18.4696 21 19 21H21C21.5304 21 22.0391 20.7893 22.4142 20.4142C22.7893 20.0392 23 19.5305 23 19V17Z" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      </svg>
+    <script src="js/script.js"></script>
+  </body>
+</html>
