@@ -72,12 +72,13 @@ if (slides.length != 0) {
 }
 
 // script accordion page__tree
+// (event.target.tagName != 'BUTTON')
 
 if (document.querySelector('.page__tree') != null) {
   var tree = document.querySelector('.page__tree');
   
   tree.onclick = function(event) {
-    if (event.target.tagName != 'H2') return;
+    if (event.target.tagName != 'H2' && event.target.tagName != 'BUTTON') return;
     let childrenContainer = event.target.parentNode.querySelector('div');
     if (!childrenContainer) return;
     childrenContainer.hidden = !childrenContainer.hidden;
