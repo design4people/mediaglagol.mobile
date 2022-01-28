@@ -742,6 +742,10 @@ body {
   line-height: 18px;
 }
 
+.page-content__text a {
+  color: inherit;
+}
+
 .page-content__button {
   position: relative;
   display: block;
